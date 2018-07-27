@@ -1,0 +1,10 @@
+*.swp
+*.un~
+*.bk
+*.log
+*.netrwhist
+.cache
+
+**/autoload/plug.vim
+plugged
+
