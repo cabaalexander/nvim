@@ -25,3 +25,8 @@ nnoremap <localleader>sbin :-1read ${HOME}/.config/nvim/snippets/bin-function.sh
 " Relative import (partial)
 nnoremap <localleader>sreq :read ${HOME}/.config/nvim/snippets/partials/relative-require.sh<CR>}jf0C
 
+" ==================== Visual Mode
+
+" Sort lines
+vnoremap <localleader>o :sort<CR>
+

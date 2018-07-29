@@ -15,3 +15,7 @@ let @k='oconsole.log(''%c{0}''.replace(''{0}'', ), ''background-color: black; co
 " Just :shrug:
 let @s='¯\_(ツ)_/¯'
 
+" Title this `sh`
+let @t='I# A$#YPPPPv$r#jwvf$r jf$r j^wvf$r j^v$r#'
+let @y='I# Ypwv$r='
+

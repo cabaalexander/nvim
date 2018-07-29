@@ -1,8 +1,8 @@
 " ==================== Normal Mode
 
 " Move to next/previous buffer
-nnoremap <leader>nb :bn<CR>
-nnoremap <leader>pb :bp<CR>
+nnoremap <leader>nb :bn!<CR>
+nnoremap <leader>pb :bp!<CR>
 
 " Ale: Move to the next/previous error
 nmap <silent> <leader>pe <Plug>(ale_previous_wrap)
@@ -43,7 +43,3 @@ nnoremap <silent> <leader>lcd :call utils#toggleLCD()<CR>
 " Calls `Obsession` plugin
 nnoremap <leader>o :Obsession<CR>
 
-" ==================== Visual Mode
-
-" Sort lines
-vnoremap <leader>o :sort<CR>
