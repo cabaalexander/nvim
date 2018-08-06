@@ -1,5 +1,7 @@
 " ==================== Normal Mode
 
+nnoremap <leader>E :e!<CR>
+
 " Move to next/previous buffer
 nnoremap <leader>nb :bn!<CR>
 nnoremap <leader>pb :bp!<CR>
