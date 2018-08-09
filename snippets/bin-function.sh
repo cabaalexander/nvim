@@ -4,7 +4,7 @@
 
 functionName(){
   [ -n "$1" ] \
-    && FIRST_ARG=$1 \
+    && local FIRST_ARG=$1 \
     || die "[functionName] Error message?"
 }
 
@@ -14,4 +14,3 @@ if [ "$(basename ${0})" = "scriptname.sh" ]
 then
   functionName "${@}"
 fi
-

@@ -1,5 +1,3 @@
-" ==================== Normal Mode
-
 nnoremap <leader>E :e!<CR>
 
 " Move to next/previous buffer
