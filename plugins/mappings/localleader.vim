@@ -31,6 +31,9 @@ nnoremap <localleader>sreq :read ${HOME}/.config/nvim/snippets/partials/relative
 " Compile from git
 nnoremap <localleader>scfg :-1read ${HOME}/.config/nvim/snippets/compile-from-git.sh<CR>
 
+" Doge
+nnoremap <localleader>sdoge :read ${HOME}/.config/nvim/snippets/partials/doge.txt<CR>
+
 " ##########
 " #        #
 " # Visual #
