@@ -4,6 +4,12 @@ if exists("b:did_ftplugin_markdown")
 endif
 let b:did_ftplugin_markdown=1
 
+" ##########
+" #        #
+" # Leader #
+" #        #
+" ##########
+
 " Toggle `grip` markdown server
 nnoremap <buffer> <C-p> :call utils#toggleGrip()<CR>
 

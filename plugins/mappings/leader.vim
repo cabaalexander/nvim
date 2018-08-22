@@ -1,3 +1,4 @@
+" Force edit current buffer
 nnoremap <leader>E :e!<CR>
 
 " Move to next/previous buffer
@@ -10,6 +11,9 @@ nmap <silent> <leader>ne <Plug>(ale_next_wrap)
 
 " Delete current buffer
 nnoremap <leader>q :bd<CR>
+
+" Force delete current buffer
+nnoremap <leader>Q :bd!<CR>
 
 " Saves current buffer
 nnoremap <leader>s :wa<CR>
