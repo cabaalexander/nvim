@@ -16,7 +16,7 @@ nnoremap <leader>q :bd<CR>
 nnoremap <leader>Q :bd!<CR>
 
 " Saves current buffer
-nnoremap <leader>s :wa<CR>
+nnoremap <leader>s :w<CR>
 
 " Quit & Save the currenf buffer
 nnoremap <leader>a :wq<CR>
