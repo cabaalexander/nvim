@@ -18,8 +18,11 @@ nnoremap <leader>Q :bd!<CR>
 " Saves current buffer
 nnoremap <leader>s :w<CR>
 
-" Quit & Save the currenf buffer
-nnoremap <leader>a :wq<CR>
+" Save current buffer and quit vim
+nnoremap <leader>A :wq<CR>
+
+" Save current buffer and close current buffer
+nnoremap <leader>a :w<bar>bd<CR>
 
 " Quit All
 nnoremap <leader>x :qa<CR>

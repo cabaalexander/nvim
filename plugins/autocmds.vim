@@ -4,7 +4,7 @@ augroup vimrcEx
   autocmd!
 
   " Set limit to 78 characters per line
-  autocmd FileType text setlocal textwidth=78
+  autocmd FileType text setlocal textwidth=80
 
   " When editing a file, always jump to the lat known cursor position.
   " Don't do it when the position is invalid or when inside an event handler
@@ -20,17 +20,5 @@ augroup vimrcEx
   " On Leave
   autocmd VimLeave * let g:toggleGripBool=1
   autocmd VimLeave * :call utils#toggleGrip()
-
-  " Bash_*
-  autocmd BufEnter .bash_*
-    \ set syntax=sh
-
-  " Vagrant
-  autocmd BufEnter Vagrantfile
-    \ set syntax=ruby
-
-  " TMUX
-  autocmd BufEnter *tmux.*
-    \ set syntax=tmux
 
 augroup END

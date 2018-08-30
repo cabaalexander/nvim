@@ -18,7 +18,8 @@ let g:NERDTreeIgnore=utils#nerdtreeIgnore()
 
 " Emmet
 let g:user_emmet_leader_key = '<NOP>'
-imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
+map <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
+let g:user_emmet_mode = 'nv'
 let g:user_emmet_settings = {
   \   'javascript.jsx': {
   \     'extends' : 'jsx'
