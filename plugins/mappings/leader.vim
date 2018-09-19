@@ -1,9 +1,9 @@
 " Force edit current buffer
-nnoremap <leader>E :e!<CR>
+nnoremap <silent> <leader>E :e!<CR>
 
 " Move to next/previous buffer
-nnoremap <leader>nb :bn!<CR>
-nnoremap <leader>pb :bp!<CR>
+nnoremap <silent> <leader>nb :bn!<CR>
+nnoremap <silent> <leader>pb :bp!<CR>
 
 " Ale: Move to the next/previous error
 nmap <silent> <leader>pe <Plug>(ale_previous_wrap)
@@ -17,6 +17,9 @@ nnoremap <leader>Q :bd!<CR>
 
 " Saves current buffer
 nnoremap <leader>s :w<CR>
+
+" Saves all buffers
+nnoremap <leader>S :wa<CR>
 
 " Save current buffer and quit vim
 nnoremap <leader>A :wq<CR>

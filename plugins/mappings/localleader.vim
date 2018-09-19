@@ -8,10 +8,10 @@ nnoremap <localleader>p :echo expand('%:p')<CR>
 nnoremap <localleader><localleader> <C-^>
 
 " Toggle linenumbers
-nnoremap <localleader>tn :call utils#toggleNumbers()<CR>
+nnoremap <silent> <localleader>tn :call utils#toggleNumbers()<CR>
 
 " Disables search highlight
-nnoremap <localleader>h :noh<CR>
+nnoremap <silent> <localleader>h :noh<CR>
 
 " Zap trailing whitespace in the current buffer
 nnoremap <silent> <localleader>zz :call utils#zap()<CR>
