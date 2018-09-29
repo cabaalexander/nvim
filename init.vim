@@ -10,17 +10,17 @@ if !exists(":DiffOrig")
     \ | wincmd p | diffthis
 endif
 
-" Source plugins Begin
-so ~/.config/nvim/plugins/autocmds.vim
-so ~/.config/nvim/plugins/settings.vim
-so ~/.config/nvim/plugins/macros.vim
-so ~/.config/nvim/plugins/pluginmanager.vim
-so ~/.config/nvim/plugins/settings-plugin-related.vim
-so ~/.config/nvim/plugins/statusline.vim
+" Source settings Begin
+so ~/.config/nvim/settings/autocmds.vim
+so ~/.config/nvim/settings/defaults.vim
+so ~/.config/nvim/settings/macros.vim
+so ~/.config/nvim/settings/pluginmanager.vim
+so ~/.config/nvim/settings/plugin-related.vim
+so ~/.config/nvim/settings/statusline.vim
 
 " Mappings
-so ~/.config/nvim/plugins/mappings/leader.vim
-so ~/.config/nvim/plugins/mappings/localleader.vim
-so ~/.config/nvim/plugins/mappings/normal.vim
-so ~/.config/nvim/plugins/mappings/visual.vim
+so ~/.config/nvim/settings/mappings/leader.vim
+so ~/.config/nvim/settings/mappings/localleader.vim
+so ~/.config/nvim/settings/mappings/normal.vim
+so ~/.config/nvim/settings/mappings/visual.vim
 
