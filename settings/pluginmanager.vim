@@ -5,12 +5,15 @@ if empty(glob('~/.config/nvim/autoload/plug.vim'))
 endif
 
 call plug#begin('~/.config/nvim/plugged')
+  " Dependencies
+  Plug 'xolox/vim-misc'
   " Editor
   Plug 'pseewald/anyfold'
   Plug 'joom/vim-commentary'
   Plug 'mattn/emmet-vim'
   Plug 'tpope/vim-obsession'
   Plug 'w0rp/ale'
+  Plug 'xolox/vim-easytags'
   " Movement / Modes
   Plug 'easymotion/vim-easymotion'
   Plug 'tpope/vim-surround'
@@ -34,6 +37,7 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'Xuyuanp/nerdtree-git-plugin', { 'on': 'NERDTreeToggle' }
   Plug 'Yggdroot/indentLine'
   Plug 'tpope/vim-fugitive'
+  Plug 'majutsushi/tagbar'
   " Search
   Plug 'brooth/far.vim'
   Plug 'wincent/scalpel'

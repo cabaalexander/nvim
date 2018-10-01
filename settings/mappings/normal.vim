@@ -29,3 +29,6 @@ nnoremap <space> <NOP>
 nnoremap <backspace> <NOP>
 nnoremap <CR> <NOP>
 
+" Open Tagbar
+nmap <F8> :TagbarToggle<CR>
+

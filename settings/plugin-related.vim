@@ -56,3 +56,6 @@ let g:ale_lint_on_enter = 0
 " Grip
 let g:toogleGripPort = 35035
 
+" Exuberant ctags
+let g:easytags_async = 1
+
