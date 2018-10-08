@@ -1,23 +1,26 @@
 #!/bin/bash
 
 functionName(){
-  local TEMP_PATH="<path/here/please>"
+  local TEMP_PATH=$(mktemp -d)
+  local URL=${1:?"Provide a github url"}
 
-  rm -rf ${TEMP_PATH}
+  git clone $URL $TEMP_PATH
 
-  git clone <github-repo-url> ${TEMP_PATH}
+  cd $TEMP_PATH
 
-  cd ${TEMP_PATH}
+  # Begin
 
-  # Action
+  # e.g.
+  # sh autogen.sh
+  # ./configure --disable-unicode && make
+  # sudo make install
 
-  # <what you need to do goes here>
+  # End
 
-  # End Action
+  cd - &> /dev/null
 
-  cd -
+  rm -rf $TEMP_PATH
 
-  rm -rf ${TEMP_PATH}
 }
 
 # If this file is running in terminal call the function `functionName`
