@@ -32,3 +32,7 @@ nnoremap <CR> <NOP>
 " Open Tagbar
 nmap <F8> :TagbarToggle<CR>
 
+" Remap `: -> ;`
+nnoremap ; :
+nnoremap : ;
+
