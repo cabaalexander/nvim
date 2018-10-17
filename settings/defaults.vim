@@ -1,3 +1,5 @@
+" Editor
+set updatetime=200
 " UI
 set nu
 set rnu

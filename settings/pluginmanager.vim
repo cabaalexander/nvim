@@ -14,6 +14,7 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'tpope/vim-obsession'
   Plug 'w0rp/ale'
   Plug 'xolox/vim-easytags'
+  Plug '907th/vim-auto-save'
   " Movement / Modes
   Plug 'easymotion/vim-easymotion'
   Plug 'tpope/vim-surround'

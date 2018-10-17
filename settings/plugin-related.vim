@@ -59,3 +59,7 @@ let g:toogleGripPort = 35035
 " Exuberant ctags
 let g:easytags_async = 1
 
+" AutoSave
+let g:auto_save = 1
+let g:auto_save_events = ["CursorHold"]
+
