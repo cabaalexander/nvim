@@ -1,11 +1,6 @@
 #!/bin/bash
 
-. ~/bin/io.sh
-
 functionName(){
-  [ -n "$1" ] \
-    && local FIRST_ARG=$1 \
-    || die "[functionName] Error message?"
 }
 
 # If this file is running in terminal call the function `functionName`
