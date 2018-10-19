@@ -53,3 +53,5 @@ nnoremap <silent> <leader>lcd :call utils#toggleLCD()<CR>
 " Calls `Obsession` plugin
 nnoremap <leader>o :Obsession<CR>
 
+nnoremap <leader>t :FZF<CR>
+

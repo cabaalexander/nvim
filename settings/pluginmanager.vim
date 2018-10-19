@@ -42,13 +42,10 @@ call plug#begin('~/.config/nvim/plugged')
   " Search
   Plug 'brooth/far.vim'
   Plug 'wincent/scalpel'
-  Plug 'wincent/command-t', {
-    \   'do': 'cd ruby/command-t/ext/command-t && ruby extconf.rb && make'
-    \ }
+  Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
   " Javascript / React
   Plug 'pangloss/vim-javascript'
   Plug 'mxw/vim-jsx'
-  Plug 'styled-components/vim-styled-components'
   Plug 'joegesualdo/jsdoc.vim'
 call plug#end()
 
