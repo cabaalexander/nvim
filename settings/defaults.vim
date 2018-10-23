@@ -1,5 +1,6 @@
 " Editor
 set updatetime=200
+
 " UI
 set nu
 set rnu
@@ -7,10 +8,12 @@ set noerrorbells
 set wildmenu
 set list
 set listchars=tab:>-,trail:~,extends:>,precedes:<
+
 " Tab
 set expandtab
 set tabstop=2
 set shiftwidth=2
+
 " Backup
 set undofile
 set nobackup

@@ -1,9 +1,6 @@
 " Vim Jsx
 let g:jsx_ext_required = 0
 
-" IndentLine
-let g:indentLine_char = '│'
-
 " Airline
 let g:airline#extensions#tabline#enabled = 1
 
@@ -39,8 +36,7 @@ endtry
 " Deoplete
 let g:deoplete#enable_at_startup = 1
 
-" Deoplete-tern
-"let g:deoplete#sources#ternjs#docs = 1 "annoying some times
+" Deoplete-tern (javascript)
 let g:deoplete#sources#ternjs#include_keywords = 1
 let g:deoplete#sources#ternjs#types = 1
 let g:deoplete#sources#ternjs#filetypes = [
@@ -62,4 +58,8 @@ let g:easytags_async = 1
 " AutoSave
 let g:auto_save = 1
 let g:auto_save_events = ["CursorHold"]
+
+" Elm
+let g:elm_setup_keybindings = 0
+let g:elm_format_autosave = 1
 

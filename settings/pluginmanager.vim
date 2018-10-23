@@ -7,6 +7,7 @@ endif
 call plug#begin('~/.config/nvim/plugged')
   " Dependencies
   Plug 'xolox/vim-misc'
+
   " Editor
   Plug 'pseewald/anyfold'
   Plug 'joom/vim-commentary'
@@ -15,19 +16,23 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'w0rp/ale'
   Plug 'xolox/vim-easytags'
   Plug '907th/vim-auto-save'
+
   " Movement / Modes
   Plug 'easymotion/vim-easymotion'
   Plug 'tpope/vim-surround'
   Plug 'christoomey/vim-tmux-navigator'
+
   " Text Objects
   Plug 'kana/vim-textobj-user'
   Plug 'michaeljsmith/vim-indent-object'
   Plug 'kana/vim-textobj-entire'
   Plug 'kana/vim-textobj-line'
+
   " Autocompletion
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
   Plug 'fszymanski/deoplete-emoji'
   Plug 'carlitux/deoplete-ternjs', { 'do': 'yarn global add tern' }
+
   " UI
   Plug 'airblade/vim-gitgutter'
   Plug 'vim-airline/vim-airline'
@@ -39,13 +44,18 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'Yggdroot/indentLine'
   Plug 'tpope/vim-fugitive'
   Plug 'majutsushi/tagbar'
+
   " Search
   Plug 'brooth/far.vim'
   Plug 'wincent/scalpel'
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+
   " Javascript / React
-  Plug 'pangloss/vim-javascript'
-  Plug 'mxw/vim-jsx'
-  Plug 'joegesualdo/jsdoc.vim'
+  " Plug 'pangloss/vim-javascript'
+  " Plug 'mxw/vim-jsx'
+  " Plug 'joegesualdo/jsdoc.vim'
+
+  " Elm
+  Plug 'elmcast/elm-vim'
 call plug#end()
 
