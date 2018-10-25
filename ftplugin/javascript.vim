@@ -4,6 +4,14 @@ if exists("b:did_ftplugin_javascript")
 endif
 let b:did_ftplugin_javascript=1
 
+" ############
+" #          #
+" # Defaults #
+" #          #
+" ############
+set tabstop=2
+set shiftwidth=2
+
 " ##########
 " #        #
 " # Leader #

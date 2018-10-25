@@ -11,8 +11,8 @@ set listchars=tab:>-,trail:~,extends:>,precedes:<
 
 " Tab
 set expandtab
-set tabstop=2
-set shiftwidth=2
+set tabstop=4
+set shiftwidth=4
 
 " Backup
 set undofile
