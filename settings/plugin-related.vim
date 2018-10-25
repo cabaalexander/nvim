@@ -62,4 +62,7 @@ let g:auto_save_events = ["CursorHold"]
 " Elm
 let g:elm_setup_keybindings = 0
 let g:elm_format_autosave = 1
+let g:elm_jump_to_error = 0
+let g:elm_make_show_warnings = 1
+let g:elm_detailed_complete = 1
 

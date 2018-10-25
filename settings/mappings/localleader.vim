@@ -16,6 +16,8 @@ nnoremap <silent> <localleader>h :noh<CR>
 " Zap trailing whitespace in the current buffer
 nnoremap <silent> <localleader>zz :call utils#zap()<CR>
 
+nnoremap <localleader>m :messages<CR>
+
 " ############
 " #          #
 " # Snippets #
