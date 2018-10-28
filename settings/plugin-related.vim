@@ -55,6 +55,16 @@ let g:toogleGripPort = 35035
 " Exuberant ctags
 let g:easytags_async = 1
 
+let g:tagbar_type_elm = {
+  \ 'ctagstype':'elm',
+  \ 'kinds':['h:header', 'i:import', 't:type', 'f:function', 'e:exposing'],
+  \ 'sro':'&&&',
+  \ 'kind2scope':{'h':'header', 'i':'import', 't':'type', 'f':'function'},
+  \ 'sort':0,
+  \ 'ctagsbin':$HOME . '/.config/nvim/bin/elmtags.py',
+  \ 'ctagsargs': '',
+  \ }
+
 " AutoSave
 let g:auto_save = 1
 let g:auto_save_events = ["CursorHold"]
