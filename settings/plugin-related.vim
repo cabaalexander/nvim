@@ -66,7 +66,7 @@ let g:tagbar_type_elm = {
   \ }
 
 " AutoSave
-let g:auto_save = 1
+let g:auto_save = 0
 let g:auto_save_events = ["CursorHold"]
 
 " Elm
