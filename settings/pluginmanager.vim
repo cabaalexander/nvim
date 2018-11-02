@@ -9,7 +9,6 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'xolox/vim-misc'
 
   " Editor
-  Plug 'pseewald/anyfold'
   Plug 'joom/vim-commentary'
   Plug 'mattn/emmet-vim'
   Plug 'tpope/vim-obsession'
@@ -38,7 +37,6 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'vim-airline/vim-airline'
   Plug 'vim-airline/vim-airline-themes'
   Plug 'rafi/awesome-vim-colorschemes'
-  Plug 'tpope/vim-vinegar'
   Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
   Plug 'Xuyuanp/nerdtree-git-plugin', { 'on': 'NERDTreeToggle' }
   Plug 'Yggdroot/indentLine'
@@ -49,11 +47,6 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'brooth/far.vim'
   Plug 'wincent/scalpel'
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-
-  " Javascript / React
-  " Plug 'pangloss/vim-javascript'
-  " Plug 'mxw/vim-jsx'
-  " Plug 'joegesualdo/jsdoc.vim'
 
   " Elm
   Plug 'elmcast/elm-vim'

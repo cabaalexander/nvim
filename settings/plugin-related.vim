@@ -1,11 +1,5 @@
-" Vim Jsx
-let g:jsx_ext_required = 0
-
 " Airline
 let g:airline#extensions#tabline#enabled = 1
-
-" Anyfold
-let anyfold_activate = 1
 
 " Nerdtree
 let NERDTreeQuitOnOpen = 1
@@ -17,14 +11,6 @@ let g:NERDTreeIgnore=utils#nerdtreeIgnore()
 let g:user_emmet_leader_key = '<NOP>'
 map <leader><tab> <Plug>(emmet-expand-abbr)
 let g:user_emmet_mode = 'nv'
-let g:user_emmet_settings = {
-  \   'javascript.jsx': {
-  \     'extends' : 'jsx'
-  \   }
-  \ }
-
-" CommandT cancel File selection
-let g:CommandTCancelMap='<Esc>'
 
 " Awesome vim color scheme
 try
@@ -55,6 +41,7 @@ let g:toogleGripPort = 35035
 " Exuberant ctags
 let g:easytags_async = 1
 
+" Tagbar
 let g:tagbar_type_elm = {
   \ 'ctagstype':'elm',
   \ 'kinds':['h:header', 'i:import', 't:type', 'f:function', 'e:exposing'],
