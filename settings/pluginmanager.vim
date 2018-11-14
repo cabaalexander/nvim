@@ -5,15 +5,12 @@ if empty(glob('~/.config/nvim/autoload/plug.vim'))
 endif
 
 call plug#begin('~/.config/nvim/plugged')
-  " Dependencies
-  Plug 'xolox/vim-misc'
 
   " Editor
   Plug 'joom/vim-commentary'
   Plug 'mattn/emmet-vim'
   Plug 'tpope/vim-obsession'
   Plug 'w0rp/ale'
-  Plug 'xolox/vim-easytags'
   Plug '907th/vim-auto-save'
 
   " Movement / Modes
@@ -50,5 +47,6 @@ call plug#begin('~/.config/nvim/plugged')
 
   " Elm
   Plug 'elmcast/elm-vim'
+
 call plug#end()
 
