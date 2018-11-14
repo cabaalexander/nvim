@@ -44,6 +44,7 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'brooth/far.vim'
   Plug 'wincent/scalpel'
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+  Plug 'junegunn/fzf.vim'
 
   " Elm
   Plug 'elmcast/elm-vim'

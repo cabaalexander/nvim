@@ -53,5 +53,14 @@ nnoremap <silent> <leader>lcd :call utils#toggleLCD()<CR>
 " Calls `Obsession` plugin
 nnoremap <leader>o :Obsession<CR>
 
-nnoremap <leader>t :FZF<CR>
+" FZF
+nnoremap <leader>p :FZF<CR>
+nnoremap <leader>b :Buffers<CR>
+nnoremap <leader>g :GFiles?<CR>
+nnoremap <leader>c :BCommits<CR>
+nnoremap <leader>C :Commits<CR>
+nnoremap <leader>l :BLines<CR>
+nnoremap <leader>L :Lines<CR>
+nnoremap <leader>t :BTags<CR>
+nnoremap <leader>T :Tags<CR>
 

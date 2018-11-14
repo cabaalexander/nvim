@@ -17,9 +17,6 @@ nmap Q gq
 nnoremap 0 ddp
 nnoremap ) ddkP
 
-" Toggle fold current position
-nnoremap <s-tab> za
-
 " Easy motion
 nmap <leader><leader>w <Plug>(easymotion-bd-w)
 nmap <leader><leader>e <Plug>(easymotion-bd-e)
