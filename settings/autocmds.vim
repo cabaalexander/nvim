@@ -32,4 +32,11 @@ augroup vimrcEx
       nmap <leader>d <Plug>(elm-show-docs)
   endfunction
 
+  " Terminal mode
+  au TermOpen * :call TermAU()
+  function! TermAU() abort
+      set nonu
+      set norelativenumber
+  endfunction
+
 augroup END

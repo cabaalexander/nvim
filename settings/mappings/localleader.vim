@@ -16,7 +16,14 @@ nnoremap <silent> <localleader>h :noh<CR>
 " Zap trailing whitespace in the current buffer
 nnoremap <silent> <localleader>zz :call utils#zap()<CR>
 
+" Show messages list
 nnoremap <localleader>m :messages<CR>
+
+" Open terminal
+nnoremap <localleader>t :terminal<CR>
+
+" Sets the working directory to current buffer
+nnoremap <silent> <localleader>lcd :call utils#toggleLCD()<CR>
 
 " ############
 " #          #

@@ -28,17 +28,8 @@ endfunction
 
 function! utils#toggleNumbers() abort
   " Hides or shows line numbers
-  if &nu > 0
-    set nu!
-  else
-    set nu
-  endif
-
-  if &relativenumber > 0
-    set relativenumber!
-  else
-    set relativenumber
-  endif
+  set nu!
+  set relativenumber!
 endfunction
 
 function! utils#toggleLCD() abort

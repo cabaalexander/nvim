@@ -39,6 +39,7 @@ nnoremap <leader>R :source<space>$MYVIMRC<CR>
 " Show Git's Blame :: Plugin Related
 nnoremap <leader>gb :Gblame<CR>
 nnoremap <leader>gd :Gdiff<CR>
+nnoremap <leader>gs :GFiles?<CR>
 
 " Plugin Manager
 nnoremap <leader>pi :PlugInstall<CR>
@@ -47,20 +48,19 @@ nnoremap <leader>pc :PlugClean<CR>
 nnoremap <leader>pu :PlugUpdate<CR>
 nnoremap <leader>pU :PlugUpgrade<CR>
 
-" Sets the working directory to current buffer
-nnoremap <silent> <leader>lcd :call utils#toggleLCD()<CR>
-
 " Calls `Obsession` plugin
 nnoremap <leader>o :Obsession<CR>
 
 " FZF
-nnoremap <leader>p :FZF<CR>
+nnoremap <leader>f :FZF<CR>
 nnoremap <leader>b :Buffers<CR>
-nnoremap <leader>g :GFiles?<CR>
 nnoremap <leader>c :BCommits<CR>
 nnoremap <leader>C :Commits<CR>
 nnoremap <leader>l :BLines<CR>
 nnoremap <leader>L :Lines<CR>
 nnoremap <leader>t :BTags<CR>
 nnoremap <leader>T :Tags<CR>
+
+" ALE
+nnoremap <leader>h :ALEDetail<CR>
 
