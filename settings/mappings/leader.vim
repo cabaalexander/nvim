@@ -60,6 +60,8 @@ nnoremap <leader>l :BLines<CR>
 nnoremap <leader>L :Lines<CR>
 nnoremap <leader>t :BTags<CR>
 nnoremap <leader>T :Tags<CR>
+nnoremap <leader>/ :History/<CR>
+nnoremap <leader>; :History:<CR>
 
 " ALE
 nnoremap <leader>h :ALEDetail<CR>
