@@ -1,5 +1,6 @@
 " Editor
 set updatetime=200
+set nofoldenable
 
 " UI
 set nu

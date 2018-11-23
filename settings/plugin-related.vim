@@ -63,3 +63,6 @@ let g:elm_jump_to_error = 0
 let g:elm_make_show_warnings = 1
 let g:elm_detailed_complete = 1
 
+" VIM Notes
+let g:notes_directories = [ '~/.notes' ]
+

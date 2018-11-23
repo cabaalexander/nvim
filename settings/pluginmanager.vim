@@ -6,12 +6,16 @@ endif
 
 call plug#begin('~/.config/nvim/plugged')
 
+  " Dependencies
+  Plug 'xolox/vim-misc' " vim notes
+
   " Editor
   Plug 'joom/vim-commentary'
   Plug 'mattn/emmet-vim'
   Plug 'tpope/vim-obsession'
   Plug 'w0rp/ale'
   Plug '907th/vim-auto-save'
+  Plug 'xolox/vim-notes', {'do': 'mkdir ~/.notes'}
 
   " Movement / Modes
   Plug 'easymotion/vim-easymotion'
@@ -36,7 +40,6 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'rafi/awesome-vim-colorschemes'
   Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
   Plug 'Xuyuanp/nerdtree-git-plugin', { 'on': 'NERDTreeToggle' }
-  Plug 'Yggdroot/indentLine'
   Plug 'tpope/vim-fugitive'
   Plug 'majutsushi/tagbar'
 
