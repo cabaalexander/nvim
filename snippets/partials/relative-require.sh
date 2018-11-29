@@ -1,3 +1,5 @@
+#!/bin/bash
+# shellcheck disable=1090
 # Relative require
 scriptname=${BASH_SOURCE%/*}
 if [[ ! -d "$scriptname" ]]
@@ -5,5 +7,5 @@ then
   scriptname=$(dirname "$0")
 fi
 
-. $scriptname ./0
+. "$scriptname" ./0
 

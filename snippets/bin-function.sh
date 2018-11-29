@@ -3,6 +3,7 @@
 set -e
 
 functionName(){
+    return $?
 }
 
 # If this file is running in terminal call the function `functionName`
