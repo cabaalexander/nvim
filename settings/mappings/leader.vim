@@ -68,5 +68,5 @@ nnoremap <leader>m :Map<CR>
 nnoremap <leader>h :ALEDetail<CR>
 
 " TMUX Send
-nnoremap <silent> <leader>r :call utils#tmuxSend('clear && ' . './' . expand('%:t'))<CR>
+nnoremap <silent> <leader>r :call utils#tmuxSend()<CR>
 

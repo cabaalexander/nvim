@@ -66,3 +66,6 @@ let g:elm_detailed_complete = 1
 " VIM Notes
 let g:notes_directories = [ '~/.notes' ]
 
+" tmuxSend
+let g:tmuxSendCMD = 'clear && ' . './' . expand('%:t')
+let g:tmuxSendWrite = 1
