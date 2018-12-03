@@ -9,6 +9,7 @@ set noerrorbells
 set wildmenu
 set list
 set listchars=tab:>-,trail:~,extends:>,precedes:<
+set cursorline
 
 " Tab
 set expandtab

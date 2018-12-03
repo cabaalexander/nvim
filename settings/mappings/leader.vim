@@ -62,7 +62,11 @@ nnoremap <leader>t :BTags<CR>
 nnoremap <leader>T :Tags<CR>
 nnoremap <leader>/ :History/<CR>
 nnoremap <leader>; :History:<CR>
+nnoremap <leader>m :Map<CR>
 
 " ALE
 nnoremap <leader>h :ALEDetail<CR>
+
+" TMUX Send
+nnoremap <silent> <leader>r :call utils#tmuxSend('clear && ' . './' . expand('%:t'))<CR>
 

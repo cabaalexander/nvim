@@ -100,3 +100,12 @@ function! utils#toggleGrip() abort
         let g:toggleGripBool=0 " toggle false
     endif
 endfunction
+
+function! utils#tmuxSend(...) abort
+    if a:0 < 1
+        return 1
+    endif
+    let l:cmd = get(a:, 1)
+    let l:panePosition = get(a:, 2, 'next')
+    execute("silent !tmux send -t :.{" . l:panePosition . "} '" . l:cmd . "' Enter")
+endfunction

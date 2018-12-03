@@ -42,6 +42,7 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'Xuyuanp/nerdtree-git-plugin', { 'on': 'NERDTreeToggle' }
   Plug 'tpope/vim-fugitive'
   Plug 'majutsushi/tagbar'
+  Plug 'wesq3/vim-windowswap'
 
   " Search
   Plug 'brooth/far.vim'
