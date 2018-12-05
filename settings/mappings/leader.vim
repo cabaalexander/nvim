@@ -70,3 +70,5 @@ nnoremap <leader>h :ALEDetail<CR>
 " TMUX Send
 nnoremap <silent> <leader>r :call utils#tmuxSend()<CR>
 
+" Notes
+nnoremap <leader>N :Note 
