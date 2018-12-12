@@ -16,6 +16,7 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'w0rp/ale'
   Plug '907th/vim-auto-save'
   Plug 'xolox/vim-notes', {'do': 'mkdir ~/.notes'}
+  Plug 'editorconfig/editorconfig-vim'
 
   " Movement / Modes
   Plug 'easymotion/vim-easymotion'
