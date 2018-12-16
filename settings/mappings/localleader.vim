@@ -25,6 +25,8 @@ nnoremap <localleader>t :terminal<CR>
 " Sets the working directory to current buffer
 nnoremap <silent> <localleader>lcd :call utils#toggleLCD()<CR>
 
+nnoremap <localleader>tN :ShowTaggedNotes<CR>
+
 " ############
 " #          #
 " # Snippets #
