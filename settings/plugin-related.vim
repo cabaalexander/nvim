@@ -70,8 +70,7 @@ let g:elm_detailed_complete = 1
 let g:notes_directories = [ '~/.notes' ]
 
 " tmuxSend
-let g:tmuxSendCMD = 'clear && ' . './' . expand('%:t')
-let g:tmuxSendWrite = 1
+let g:tmuxSendAutoSave = 1
 
 " EditorConfig
 let g:EditorConfig_exclude_patterns = ['fugitive://.*', 'scp://.*']

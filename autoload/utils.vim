@@ -102,8 +102,9 @@ function! utils#toggleGrip() abort
 endfunction
 
 function! utils#tmuxSend() abort
-    let l:cmd = get(g:, 'tmuxSendCMD', 'echo "tmuxSend working ;)"')
+    let l:defaultCmd = 'clear && ' . expand('%:p')
+    let l:cmd = get(g:, 'tmuxSendCMD', l:defaultCmd)
     let l:panePosition = get(g:, 'tmuxSendPanePosition', 'next')
-    if get(g:, 'tmuxSendWrite', 0) == 1 | w | endif
+    if get(g:, 'tmuxSendAutoSave', 0) == 1 | w | endif
     execute("silent !tmux send -t :.{" . l:panePosition . "} '" . l:cmd . "' Enter")
 endfunction
