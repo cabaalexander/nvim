@@ -71,4 +71,8 @@ nnoremap <leader>h :ALEDetail<CR>
 nnoremap <silent> <leader>r :call utils#tmuxSend()<CR>
 
 " Notes
-nnoremap <leader>N :Note 
+nnoremap <leader>N :Note<space>
+
+" RIPGREP
+nnoremap <leader>F :Find<space>
+command! -bang -nargs=* Find call fzf#vim#grep( 'rg -g !.git --column --line-number --no-heading --fixed-strings --ignore-case --hidden --follow --color "always" '.shellescape(<q-args>), 1, <bang>0)
