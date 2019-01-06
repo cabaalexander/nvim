@@ -17,6 +17,7 @@ call plug#begin('~/.config/nvim/plugged')
   Plug '907th/vim-auto-save'
   Plug 'xolox/vim-notes', {'do': 'mkdir ~/.notes'}
   Plug 'editorconfig/editorconfig-vim'
+  Plug 'ludovicchabant/vim-gutentags'
 
   " Movement / Modes
   Plug 'easymotion/vim-easymotion'
@@ -44,6 +45,7 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'tpope/vim-fugitive'
   Plug 'majutsushi/tagbar'
   Plug 'wesq3/vim-windowswap'
+  Plug 'ryanoasis/vim-devicons'
 
   " Search
   Plug 'brooth/far.vim'
@@ -54,5 +56,7 @@ call plug#begin('~/.config/nvim/plugged')
   " Elm
   Plug 'elmcast/elm-vim'
 
+  " GraphQL
+  Plug 'jparise/vim-graphql'
 call plug#end()
 

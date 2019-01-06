@@ -1,5 +1,6 @@
-" Airline
+" Airline / Powerline
 let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
 
 " Nerdtree
 let NERDTreeQuitOnOpen = 1
@@ -45,6 +46,7 @@ let g:toogleGripPort = 35035
 let g:easytags_async = 1
 
 " Tagbar
+let g:tagbar_sort = 0
 let g:tagbar_type_elm = {
   \ 'ctagstype':'elm',
   \ 'kinds':['h:header', 'i:import', 't:type', 'f:function', 'e:exposing'],
@@ -74,3 +76,7 @@ let g:tmuxSendAutoSave = 1
 
 " EditorConfig
 let g:EditorConfig_exclude_patterns = ['fugitive://.*', 'scp://.*']
+
+" Gutentags
+let g:gutentags_ctags_exclude = ['*.css', '*.html', '*.js']
+let g:gutentags_cache_dir = '~/.vim/gutentags'
