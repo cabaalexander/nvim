@@ -7,8 +7,6 @@ let g:airline_section_z = airline#section#create(["\uE0A1" . '%{line(".")}' . "\
 
 " Nerdtree
 let NERDTreeQuitOnOpen = 1
-let g:NERDTreeDirArrowExpandable = '►'
-let g:NERDTreeDirArrowCollapsible = '▼'
 let g:NERDTreeIgnore=utils#nerdtreeIgnore()
 
 " Emmet
@@ -35,8 +33,8 @@ let g:deoplete#sources#ternjs#filetypes = [
   \ ]
 
 " Ale
-let g:ale_sign_error = '●'
-let g:ale_sign_warning = '.'
+let g:ale_sign_error = '💢'
+let g:ale_sign_warning = '⚠'
 let g:ale_lint_on_enter = 0
 let g:ale_linters = {
   \ 'javascript': ['eslint']
