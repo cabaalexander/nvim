@@ -101,10 +101,13 @@ function! utils#toggleGrip() abort
     endif
 endfunction
 
-function! utils#tmuxSend() abort
+function! utils#tmuxSend(...) abort
+    " Sends a shell command to a tmux pane
     let l:defaultCmd = 'clear && ' . expand('%:p')
-    let l:cmd = get(g:, 'tmuxSendCMD', l:defaultCmd)
-    let l:panePosition = get(g:, 'tmuxSendPanePosition', 'next')
+    let l:argumentCmd = get(a:, 1, l:defaultCmd)
+    let l:cmd = get(g:, 'tmuxSendCMD', l:argumentCmd)
+    let l:pane = get(g:, 'tmuxSendPane', 'next')
+    let l:options = get(g:, 'tmuxSendOptions', '')
     if get(g:, 'tmuxSendAutoSave', 0) == 1 | w | endif
-    execute("silent !tmux send -t :.{" . l:panePosition . "} '" . l:cmd . "' Enter")
+    execute("silent !tmux send -t :.{" . l:pane . "} '" . l:cmd . " " . l:options . "' Enter")
 endfunction

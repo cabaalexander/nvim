@@ -17,6 +17,7 @@ so ~/.config/nvim/settings/macros.vim
 so ~/.config/nvim/settings/pluginmanager.vim
 so ~/.config/nvim/settings/plugin-related.vim
 so ~/.config/nvim/settings/statusline.vim
+so ~/.config/nvim/settings/usercommands.vim
 
 " Mappings
 so ~/.config/nvim/settings/mappings/leader.vim
