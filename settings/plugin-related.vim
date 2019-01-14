@@ -81,3 +81,17 @@ let g:EditorConfig_exclude_patterns = ['fugitive://.*', 'scp://.*']
 " Gutentags
 let g:gutentags_ctags_exclude = ['*.css', '*.html', '*.js']
 let g:gutentags_cache_dir = '~/.vim/gutentags'
+
+" vim-javascript
+let g:javascript_plugin_jsdoc = 1
+let g:javascript_conceal_null                      = 'ø'
+let g:javascript_conceal_this                      = '@'
+let g:javascript_conceal_return                    = '⇚'
+let g:javascript_conceal_undefined                 = '¿'
+let g:javascript_conceal_NaN                       = 'Ͷ'
+let g:javascript_conceal_prototype                 = '¶'
+let g:javascript_conceal_static                    = '•'
+let g:javascript_conceal_super                     = 'Ω'
+let g:javascript_conceal_arrow_function            = '⇒'
+let g:javascript_conceal_noarg_arrow_function      = '🞅'
+let g:javascript_conceal_underscore_arrow_function = '🞅'

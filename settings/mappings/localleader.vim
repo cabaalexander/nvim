@@ -27,6 +27,8 @@ nnoremap <silent> <localleader>lcd :call utils#toggleLCD()<CR>
 
 nnoremap <localleader>tN :ShowTaggedNotes<CR>
 
+nnoremap <localleader>c :call utils#toggleConceal()<CR>
+
 " ############
 " #          #
 " # Snippets #

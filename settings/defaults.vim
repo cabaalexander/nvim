@@ -1,6 +1,8 @@
 " Editor
 set updatetime=200
 set nofoldenable
+set conceallevel=1
+set concealcursor=nvic
 
 " UI
 set nu

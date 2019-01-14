@@ -19,7 +19,7 @@ set shiftwidth=2
 " ##########
 
 " Add documentation to a function
-nnoremap <buffer> <leader>d :call JSDocAdd()<CR>
+nnoremap <buffer> <leader>d :JsDoc<CR>
 
 " ##########
 " #        #

@@ -58,5 +58,9 @@ call plug#begin('~/.config/nvim/plugged')
 
   " GraphQL
   Plug 'jparise/vim-graphql'
+
+  " JavaScript
+  Plug 'heavenshell/vim-jsdoc'
+  Plug 'pangloss/vim-javascript', { 'do': 'yarn global add js-beautify' }
 call plug#end()
 

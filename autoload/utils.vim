@@ -111,3 +111,14 @@ function! utils#tmuxSend(...) abort
     if get(g:, 'tmuxSendAutoSave', 0) == 1 | w | endif
     execute("silent !tmux send -t :.{" . l:pane . "} '" . l:cmd . " " . l:options . "' Enter")
 endfunction
+
+function! utils#toggleConceal() abort
+    " Show or hide conceal
+    if !get(b:, 'toggleGripBool')
+        set conceallevel=0
+        let b:toggleGripBool=1 " toggle true
+    else
+        set conceallevel=1
+        let b:toggleGripBool=0 " toggle false
+    endif
+endfunction
