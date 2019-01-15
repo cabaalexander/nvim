@@ -1,3 +1,5 @@
+" vim: ts=8:sw=8
+
 " Example command
 com! -complete=custom,ListUsers -nargs=1 Finger !finger <args>
 fun! ListUsers(A,L,P)
@@ -7,4 +9,6 @@ endfun
 " Send command to the next tmux pane
 com! -nargs=1 TMUXSend call utils#tmuxSend('<args>')
 
-" vim: ts=8:sw=8
+" Formats JSON
+command FormatJSON %!python -m json.tool
+

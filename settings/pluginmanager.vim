@@ -40,12 +40,14 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'vim-airline/vim-airline'
   Plug 'vim-airline/vim-airline-themes'
   Plug 'rafi/awesome-vim-colorschemes'
-  Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
-  Plug 'Xuyuanp/nerdtree-git-plugin', { 'on': 'NERDTreeToggle' }
+  Plug 'scrooloose/nerdtree'
+  Plug 'Xuyuanp/nerdtree-git-plugin'
   Plug 'tpope/vim-fugitive'
   Plug 'majutsushi/tagbar'
   Plug 'wesq3/vim-windowswap'
   Plug 'ryanoasis/vim-devicons'
+  Plug 'google/vim-searchindex'
+  Plug 'tmux-plugins/vim-tmux'
 
   " Search
   Plug 'brooth/far.vim'

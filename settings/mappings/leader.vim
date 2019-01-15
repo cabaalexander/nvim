@@ -1,6 +1,9 @@
 " Force edit current buffer
 nnoremap <silent> <leader>E :e!<CR>
 
+" NERDTree find current file in tree
+nnoremap <silent> <leader>v :NERDTreeFind<CR>
+
 " Move to next/previous buffer
 nnoremap <silent> <leader>nb :bn!<CR>
 nnoremap <silent> <leader>pb :bp!<CR>

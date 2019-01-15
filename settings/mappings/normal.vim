@@ -2,7 +2,7 @@
 nnoremap <C-c> "+y
 
 " NerdTree Toggle
-nnoremap <C-n> :NERDTreeToggle<CR>
+nnoremap <silent> <C-n> :NERDTreeToggle<CR>
 
 " Switch between panes using directional keys
 nnoremap <C-h> <C-w>h
@@ -18,8 +18,8 @@ nnoremap 0 ddp
 nnoremap ) ddkP
 
 " Easy motion
-nmap <leader><leader>w <Plug>(easymotion-bd-w)
-nmap <leader><leader>e <Plug>(easymotion-bd-e)
+nmap <silent> <leader><leader>w <Plug>(easymotion-bd-w)
+nmap <silent> <leader><leader>e <Plug>(easymotion-bd-e)
 
 " Block some default keys
 nnoremap <space> <NOP>
@@ -27,7 +27,7 @@ nnoremap <backspace> <NOP>
 nnoremap <CR> <NOP>
 
 " Open Tagbar
-nnoremap <F8> :TagbarToggle<CR>
+nnoremap <silent> <F8> :TagbarToggle<CR>
 
 " Remap `: -> ;`
 nnoremap ; :
