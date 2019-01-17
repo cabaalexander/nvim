@@ -104,8 +104,13 @@ endfunction
 function! utils#tmuxSend(...) abort
     " Sends a shell command to a tmux pane
     let l:defaultCmd = 'clear && ' . expand('%:p')
-    let l:argumentCmd = get(a:, 1, l:defaultCmd)
-    let l:cmd = get(g:, 'tmuxSendCMD', l:argumentCmd)
+    let l:argumentCmd = get(a:, 1)
+
+    if !(l:argumentCmd=~'^0$')
+        let g:tmuxSendCMD = "clear && ".l:argumentCmd
+    endif
+
+    let l:cmd = get(g:, 'tmuxSendCMD', l:defaultCmd)
     let l:pane = get(g:, 'tmuxSendPane', 'next')
     let l:options = get(g:, 'tmuxSendOptions', '')
     if get(g:, 'tmuxSendAutoSave', 0) == 1 | w | endif
