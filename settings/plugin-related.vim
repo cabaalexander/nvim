@@ -80,6 +80,7 @@ let g:notes_directories = [ '~/.notes' ]
 
 " tmuxSend
 let g:tmuxSendAutoSave = 1
+let g:tmuxSendAutoClear = 1
 
 " EditorConfig
 let g:EditorConfig_exclude_patterns = ['fugitive://.*', 'scp://.*']
