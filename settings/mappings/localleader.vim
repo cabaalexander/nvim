@@ -27,7 +27,7 @@ nnoremap <silent> <localleader>lcd :call utils#toggleLCD()<CR>
 
 nnoremap <localleader>tN :ShowTaggedNotes<CR>
 
-nnoremap <localleader>c :call utils#toggleConceal()<CR>
+nnoremap <silent> <localleader>c :call utils#toggleConceal()<CR>
 
 " ############
 " #          #
@@ -36,19 +36,19 @@ nnoremap <localleader>c :call utils#toggleConceal()<CR>
 " ############
 
 " ~/bin/function Snippet
-nnoremap <localleader>sbin :-1read ${HOME}/.config/nvim/snippets/bin-function.sh<CR>2j
+nnoremap <silent> <localleader>sbin :-1read ${HOME}/.config/nvim/snippets/bin-function.sh<CR>2j
 
 " Relative import (partial)
-nnoremap <localleader>sreq :read ${HOME}/.config/nvim/snippets/partials/relative-require.sh<CR>dj}jf0C
+nnoremap <silent> <localleader>sreq :read ${HOME}/.config/nvim/snippets/partials/relative-require.sh<CR>dj}jf0C
 
 " Compile from git
-nnoremap <localleader>scfg :-1read ${HOME}/.config/nvim/snippets/compile-from-git.sh<CR>
+nnoremap <silent> <localleader>scfg :-1read ${HOME}/.config/nvim/snippets/compile-from-git.sh<CR>
 
 " getopts
-nnoremap <localleader>sopt :read ${HOME}/.config/nvim/snippets/partials/getopts.sh<CR>ddjf:a
+nnoremap <silent> <localleader>sopt :read ${HOME}/.config/nvim/snippets/partials/getopts.sh<CR>ddjf:a
 
 " Doge
-nnoremap <localleader>sdoge :read ${HOME}/.config/nvim/snippets/partials/doge.txt<CR>
+nnoremap <silent> <localleader>sdoge :read ${HOME}/.config/nvim/snippets/partials/doge.txt<CR>
 
 " ##########
 " #        #

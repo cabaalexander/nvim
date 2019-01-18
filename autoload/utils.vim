@@ -90,12 +90,12 @@ function! utils#toggleGrip() abort
 
     if !get(g:, 'toggleGripBool')
         execute(l:cmd)
-        execute("redraw")
+        redraw
         echom "Grip markdown server running at: " . l:ip
         let g:toggleGripBool=1 " toggle true
     else
         execute("silent !killall grip")
-        execute("redraw")
+        redraw
         echom "Grip markdown server turned off"
         let g:toggleGripBool=0 " toggle false
     endif
@@ -105,7 +105,8 @@ function! utils#tmuxSend(...) abort
     " Sends a shell command to a tmux pane
     let l:defaultCmd = expand('%:p')
     let l:argumentCmd = get(a:, 1)
-    let l:autoClear = get(g:, 'tmuxSendAutoClear', 0)
+    let l:autoClear = get(g:, 'tmuxSendAutoClear')
+    let l:notification = get(g:, 'tmuxSendNotification')
 
     if !(l:argumentCmd=~'^0$')
         let g:tmuxSendCMD = l:argumentCmd
@@ -117,11 +118,19 @@ function! utils#tmuxSend(...) abort
         let l:clear = ''
     endif
 
+    if !(l:notification == 0)
+        let l:display = ' && dsply -b "Process complete" "tmuxSend"'
+    else
+        let l:display = ''
+    endif
+
     let l:cmd = get(g:, 'tmuxSendCMD', l:defaultCmd)
     let l:pane = get(g:, 'tmuxSendPane', 'next')
     let l:options = get(g:, 'tmuxSendOptions', '')
     if get(g:, 'tmuxSendAutoSave', 0) == 1 | w | endif
-    execute("silent !tmux send -t :.{".l:pane."} '".l:clear.l:cmd." ".l:options."' Enter")
+    execute("silent !tmux send -t :.{".l:pane."} '".l:clear.l:cmd." ".l:options.l:display."' Enter")
+    redraw
+    echo "tmuxSend: ".l:cmd
 endfunction
 
 function! utils#toggleConceal() abort
