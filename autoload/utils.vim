@@ -130,7 +130,7 @@ function! utils#tmuxSend(...) abort
     if get(g:, 'tmuxSendAutoSave', 0) == 1 | w | endif
     execute("silent !tmux send -t :.{".l:pane."} '".l:clear.l:cmd." ".l:options.l:display."' Enter")
     redraw
-    echo "tmuxSend: ".l:cmd
+    echo "tmuxSend: ".l:cmd." ".l:options
 endfunction
 
 function! utils#toggleConceal() abort
