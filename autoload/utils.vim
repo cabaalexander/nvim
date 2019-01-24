@@ -119,7 +119,7 @@ function! utils#tmuxSend(...) abort
     endif
 
     if !(l:notification == 0)
-        let l:display = ' && dsply -b "Process complete" "tmuxSend"'
+        let l:display = ' ; dsply -b "Process complete" "tmuxSend"'
     else
         let l:display = ''
     endif
@@ -130,7 +130,7 @@ function! utils#tmuxSend(...) abort
     if get(g:, 'tmuxSendAutoSave', 0) == 1 | w | endif
     execute("silent !tmux send -t :.{".l:pane."} '".l:clear.l:cmd." ".l:options.l:display."' Enter")
     redraw
-    echo "tmuxSend: ".l:cmd." ".l:options
+    echom "tmuxSend: ".l:cmd." ".l:options
 endfunction
 
 function! utils#toggleConceal() abort
