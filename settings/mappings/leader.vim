@@ -72,7 +72,7 @@ nnoremap <leader>M :Marks<CR>
 nnoremap <leader>h :ALEDetail<CR>
 
 " TMUX Send
-nnoremap <silent> <leader>r :call utils#tmuxSend()<CR>
+nnoremap <silent> <leader>r :call tmux#send()<CR>
 
 " Notes
 nnoremap <leader>N :Note<space>

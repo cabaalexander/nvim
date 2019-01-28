@@ -20,7 +20,7 @@ nnoremap <silent> <localleader>zz :call utils#zap()<CR>
 nnoremap <localleader>m :messages<CR>
 
 " Open terminal
-nnoremap <localleader>t :terminal<CR>
+nnoremap <localleader>T :terminal<CR>
 
 " Sets the working directory to current buffer
 nnoremap <silent> <localleader>lcd :call utils#toggleLCD()<CR>
