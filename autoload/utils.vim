@@ -108,8 +108,14 @@ function! utils#tmuxSend(...) abort
     let l:autoClear = get(g:, 'tmuxSendAutoClear')
     let l:notification = get(g:, 'tmuxSendNotification')
 
-    if !(l:argumentCmd=~'^0$')
-        let g:tmuxSendCMD = l:argumentCmd
+    " This checks if the only argument passed is ok
+    if !(l:argumentCmd =~# '^0$')
+        " If the argument is 'this' run current
+        if l:argumentCmd ==# 'this'
+            let b:tmuxSendCMD = l:defaultCmd
+        else
+            let b:tmuxSendCMD = l:argumentCmd
+        endif
     endif
 
     if !(l:autoClear == 0)
@@ -124,10 +130,12 @@ function! utils#tmuxSend(...) abort
         let l:display = ''
     endif
 
-    let l:cmd = get(g:, 'tmuxSendCMD', l:defaultCmd)
+    let l:cmd = get(b:, 'tmuxSendCMD', l:defaultCmd)
     let l:pane = get(g:, 'tmuxSendPane', 'next')
     let l:options = get(g:, 'tmuxSendOptions', '')
+
     if get(g:, 'tmuxSendAutoSave', 0) == 1 | w | endif
+
     execute("silent !tmux send -t :.{".l:pane."} '".l:clear.l:cmd." ".l:options.l:display."' Enter")
     redraw
     echom "tmuxSend: ".l:cmd." ".l:options
