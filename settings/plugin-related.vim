@@ -17,13 +17,13 @@ let g:NERDTreeIgnore=utils#nerdtreeIgnore()
 
 " Emmet
 let g:user_emmet_leader_key = '<NOP>'
-map <leader><tab> <Plug>(emmet-expand-abbr)
 let g:user_emmet_mode = 'nv'
+map <leader><tab> <Plug>(emmet-expand-abbr)
 
-" Awesome vim color scheme
+" Color scheme
+let g:srcery_transparent_background = 1
 try
-  colorscheme gruvbox
-  set background=dark
+  colorscheme srcery
 catch
 endtry
 

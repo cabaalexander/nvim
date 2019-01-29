@@ -38,8 +38,6 @@ call plug#begin('~/.config/nvim/plugged')
   " UI
   Plug 'airblade/vim-gitgutter'
   Plug 'vim-airline/vim-airline'
-  Plug 'vim-airline/vim-airline-themes'
-  Plug 'rafi/awesome-vim-colorschemes'
   Plug 'scrooloose/nerdtree'
   Plug 'Xuyuanp/nerdtree-git-plugin'
   Plug 'tpope/vim-fugitive'
@@ -48,6 +46,7 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'ryanoasis/vim-devicons'
   Plug 'google/vim-searchindex'
   Plug 'tmux-plugins/vim-tmux'
+  Plug 'srcery-colors/srcery-vim'
 
   " Search
   Plug 'brooth/far.vim'
