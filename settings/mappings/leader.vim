@@ -36,9 +36,6 @@ nnoremap <leader>x :qa<CR>
 " Quit All --force
 nnoremap <leader>X :qa!<CR>
 
-" Source VIMRC
-nnoremap <leader>R :source<space>$MYVIMRC<CR>
-
 " Show Git's Blame :: Plugin Related
 nnoremap <leader>gb :Gblame<CR>
 nnoremap <leader>gd :Gdiff<CR>
@@ -71,8 +68,8 @@ nnoremap <leader>M :Marks<CR>
 " ALE
 nnoremap <leader>h :ALEDetail<CR>
 
-" TMUX Send
-nnoremap <silent> <leader>r :call tmux#send()<CR>
+" vim-tmux-runner
+nnoremap <silent> <leader>r :VtrSendFile!<CR>
 
 " Notes
 nnoremap <leader>N :Note<space>
@@ -80,3 +77,10 @@ nnoremap <leader>N :Note<space>
 " RIPGREP
 nnoremap <leader>F :Find<space>
 command! -bang -nargs=* Find call fzf#vim#grep( 'rg -g !.git --column --line-number --no-heading --fixed-strings --ignore-case --hidden --follow --color "always" '.shellescape(<q-args>), 1, <bang>0)
+
+" quickfix next and previous
+nnoremap <silent> <leader>nf :cn<CR>
+nnoremap <silent> <leader>pf :cN<CR>
+
+" gitgutter
+nnoremap <silent> <leader>hq :pclose<CR>

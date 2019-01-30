@@ -33,3 +33,10 @@ nnoremap <silent> <F8> :TagbarToggle<CR>
 nnoremap ; :
 nnoremap : ;
 
+" vim-tmux-runner
+nnoremap <silent>tr :VtrSendCommandToRunner!<CR>
+nnoremap <silent>tR :VtrFlushCommand<CR>:VtrSendCommandToRunner!<CR>
+nnoremap <silent>tf :VtrFlushCommand<CR>
+nnoremap <silent>tk :VtrKillRunner<CR>
+noremap <silent>tl :VtrSendLinesToRunner!<CR>
+nnoremap ta :VtrAttachToPane 

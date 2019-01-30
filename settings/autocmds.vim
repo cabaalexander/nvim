@@ -3,9 +3,6 @@ augroup vimrcEx
 
   au!
 
-  " Set limit to 78 characters per line
-  au FileType text setlocal textwidth=80
-
   " When editing a file, always jump to the lat known cursor position.
   " Don't do it when the position is invalid or when inside an event handler
   au BufReadPost *
@@ -20,8 +17,12 @@ augroup vimrcEx
   " On Leave
   au VimLeave * :call VimLeaveAU()
   function! VimLeaveAU() abort
+    " toggleGrip
     let g:toggleGripBool=1
-    call utils#toggleGrip()
+    silent call utils#toggleGrip()
+
+    " vim-tmux-runner
+    :VtrKillRunner
   endfunction
 
   " Elm file types

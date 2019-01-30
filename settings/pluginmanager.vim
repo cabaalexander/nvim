@@ -18,6 +18,7 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'xolox/vim-notes', {'do': 'mkdir ~/.notes'}
   Plug 'editorconfig/editorconfig-vim'
   Plug 'ludovicchabant/vim-gutentags'
+  Plug 'christoomey/vim-tmux-runner'
 
   " Movement / Modes
   Plug 'easymotion/vim-easymotion'

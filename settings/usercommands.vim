@@ -1,8 +1,5 @@
-" vim: ts=8:sw=8
-
-" Send command to the next tmux pane
-com! -nargs=1 TMUXSend call tmux#send('<args>')
+" vim: ts=2:sw=2
 
 " Formats JSON
-command FormatJSON %!python -m json.tool
+command! FormatJSON %!python -m json.tool
 
