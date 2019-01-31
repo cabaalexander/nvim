@@ -39,4 +39,4 @@ nnoremap <silent>tR :VtrFlushCommand<CR>:VtrSendCommandToRunner!<CR>
 nnoremap <silent>tf :VtrFlushCommand<CR>
 nnoremap <silent>tk :VtrKillRunner<CR>
 noremap <silent>tl :VtrSendLinesToRunner!<CR>
-nnoremap ta :VtrAttachToPane 
+nnoremap ta :call tmux#attachToNext()<CR>

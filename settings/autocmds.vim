@@ -20,9 +20,6 @@ augroup vimrcEx
     " toggleGrip
     let g:toggleGripBool=1
     silent call utils#toggleGrip()
-
-    " vim-tmux-runner
-    :VtrKillRunner
   endfunction
 
   " Elm file types
