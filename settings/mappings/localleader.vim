@@ -31,6 +31,10 @@ nnoremap <silent> <localleader>c :call utils#toggleConceal()<CR>
 
 nnoremap <silent> <localleader>q :bufdo bd<CR>
 
+" ALE
+nnoremap <localleader>h :ALEDetail<CR>
+
+
 " ############
 " #          #
 " # Snippets #

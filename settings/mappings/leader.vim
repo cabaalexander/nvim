@@ -65,9 +65,6 @@ nnoremap <leader>; :History:<CR>
 nnoremap <leader>m :Map<CR>
 nnoremap <leader>M :Marks<CR>
 
-" ALE
-nnoremap <leader>h :ALEDetail<CR>
-
 " vim-tmux-runner
 nnoremap <silent> <leader>r :VtrSendFile!<CR>
 
