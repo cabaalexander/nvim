@@ -18,7 +18,7 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'xolox/vim-notes', {'do': 'mkdir ~/.notes'}
   Plug 'editorconfig/editorconfig-vim'
   Plug 'ludovicchabant/vim-gutentags'
-  Plug 'christoomey/vim-tmux-runner'
+  Plug 'cabaalexander/vim-tmux-runner'
   Plug 'tpope/vim-repeat'
 
   " Movement / Modes
