@@ -1,0 +1,14 @@
+snippet     toggle
+alias       togg tog
+options     head
+    function! `trim(expand('%:t'), '.vim')`#${1:functionName}() abort
+        " Show or hide stuffs ;)
+        if !get(b:, '$1Bool')
+            ${2:#:yes}
+            let b:$1Bool=1 " toggle true
+        else
+            ${3:#:no}
+            let b:$1Bool=0 " toggle false
+        endif
+    endfunction
+    ${0}

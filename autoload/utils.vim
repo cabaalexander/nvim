@@ -102,12 +102,12 @@ function! utils#toggleGrip() abort
 endfunction
 
 function! utils#toggleConceal() abort
-    " Show or hide conceal
-    if !get(b:, 'toggleGripBool')
+    " Show or hide toggleConceal
+    if !get(b:, 'toggleConcealBool')
         set conceallevel=0
-        let b:toggleGripBool=1 " toggle true
+        let b:toggleConcealBool=1 " toggle true
     else
         set conceallevel=1
-        let b:toggleGripBool=0 " toggle false
+        let b:toggleConcealBool=0 " toggle false
     endif
 endfunction
