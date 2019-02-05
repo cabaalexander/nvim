@@ -108,3 +108,6 @@ let g:javascript_conceal_underscore_arrow_function = '▢'
 let g:vtr_filetype_runner_overrides = {
   \ 'sh': 'bash {file}'
   \ }
+
+" neosnippet
+let g:neosnippet#snippets_directory='~/.config/nvim/snippets'

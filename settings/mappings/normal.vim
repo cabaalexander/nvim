@@ -39,6 +39,11 @@ nnoremap <silent>tR :VtrFlushCommand<CR>:VtrSendCommandToRunner!<CR>
 nnoremap <silent>tf :VtrFlushCommand<CR>
 nnoremap <silent>tF :VtrFocusRunner<CR>
 nnoremap <silent>tk :VtrKillRunner<CR>
-noremap <silent>tl :VtrSendLinesToRunner!<CR>
+noremap  <silent>tl :VtrSendLinesToRunner!<CR>
 nnoremap ta :call tmux#attachToNext()<CR>
 nnoremap tA :VtrAttachToPane 
+
+" neosnippet
+imap <C-k> <Plug>(neosnippet_expand_or_jump)
+smap <C-k> <Plug>(neosnippet_expand_or_jump)
+xmap <C-k> <Plug>(neosnippet_expand_target)

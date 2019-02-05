@@ -81,3 +81,6 @@ nnoremap <silent> <leader>pf :cN<CR>
 
 " gitgutter
 nnoremap <silent> <leader>hq :pclose<CR>
+
+" Disables search highlight
+nnoremap <silent> <leader>nh :noh<CR>

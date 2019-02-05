@@ -36,6 +36,8 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
   Plug 'fszymanski/deoplete-emoji'
   Plug 'carlitux/deoplete-ternjs', { 'do': 'yarn global add tern' }
+  Plug 'Shougo/neosnippet.vim'
+  Plug 'Shougo/neosnippet-snippets'
 
   " UI
   Plug 'airblade/vim-gitgutter'

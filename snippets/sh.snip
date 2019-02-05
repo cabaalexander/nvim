@@ -1,0 +1,42 @@
+snippet     getopts
+options     head
+alias       op opt
+    for ${1:\ARG} in "$@"
+    do
+    case "$$1" in
+        --${2:extension}=*)
+        ${3:#:EXTENSION}="${$1#*=}"
+        shift # past this arg
+        ;;
+        --${5:default})
+        ${6:DEFAULT}=YES
+        shift # past this arg
+        ;;
+        *) # unknown option ;;
+    esac
+    done
+    ${0}
+
+
+snippet     echo
+options     head
+alias       ek
+    echo "${1}"
+    ${0}
+
+
+snippet     bin-function
+options     head
+alias       bin binf
+    #!/bin/bash -e
+
+    ${1:functionName}(){
+        ${0:return $?}
+    }
+
+    # If this file is running in terminal call the function \`$1\`
+    # Otherwise just source it
+    if [ "$(basename "\$0")" = "`expand('%:t')`" ]
+    then
+      $1 "${@}"
+    fi

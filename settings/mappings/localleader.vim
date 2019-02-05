@@ -1,5 +1,8 @@
 " Edit file, starting in the same directory as current file
-nnoremap <localleader>e :edit <C-r>=expand('%:p:h') . '/'<CR>
+nnoremap <localleader>ef :edit <C-r>=expand('%:p:h') . '/'<CR>
+
+" Edit snippet filetype
+nnoremap <silent> <localleader>es :NeoSnippetEdit<CR>
 
 " Shows the path of the current file
 nnoremap <localleader>p :echo expand('%:p')<CR>
@@ -9,9 +12,6 @@ nnoremap <localleader><localleader> <C-^>
 
 " Toggle linenumbers
 nnoremap <silent> <localleader>tn :call utils#toggleNumbers()<CR>
-
-" Disables search highlight
-nnoremap <silent> <localleader>h :noh<CR>
 
 " Zap trailing whitespace in the current buffer
 nnoremap <silent> <localleader>zz :call utils#zap()<CR>
@@ -41,20 +41,8 @@ nnoremap <localleader>h :ALEDetail<CR>
 " #          #
 " ############
 
-" ~/bin/function Snippet
-nnoremap <silent> <localleader>sbin :-1read ${HOME}/.config/nvim/snippets/bin-function.sh<CR>2j
-
-" Relative import (partial)
-nnoremap <silent> <localleader>sreq :read ${HOME}/.config/nvim/snippets/partials/relative-require.sh<CR>dj}jf0C
-
-" Compile from git
-nnoremap <silent> <localleader>scfg :-1read ${HOME}/.config/nvim/snippets/compile-from-git.sh<CR>
-
-" getopts
-nnoremap <silent> <localleader>sopt :read ${HOME}/.config/nvim/snippets/partials/getopts.sh<CR>ddjf:a
-
 " Doge
-nnoremap <silent> <localleader>sdoge :read ${HOME}/.config/nvim/snippets/partials/doge.txt<CR>
+nnoremap <silent> <localleader>sdoge :read ${HOME}/.config/nvim/snippets/doge.txt<CR>}o
 
 " ##########
 " #        #
