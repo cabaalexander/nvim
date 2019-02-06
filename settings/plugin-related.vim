@@ -64,10 +64,6 @@ let g:tagbar_type_elm = {
   \ 'ctagsargs': '',
   \ }
 
-" AutoSave
-let g:auto_save = 0
-let g:auto_save_events = ["CursorHold"]
-
 " Elm
 let g:elm_setup_keybindings = 0
 let g:elm_format_autosave = 1
