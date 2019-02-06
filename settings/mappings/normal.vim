@@ -36,8 +36,7 @@ nnoremap : ;
 " vim-tmux-runner
 nnoremap <silent>tr :VtrSendCommandToRunner!<CR>
 nnoremap <silent>tR :VtrFlushCommand<CR>:VtrSendCommandToRunner!<CR>
-nnoremap <silent>tf :VtrFlushCommand<CR>
-nnoremap <silent>tF :VtrFocusRunner<CR>
+nnoremap <silent>tf :VtrFocusRunner<CR>
 nnoremap <silent>tk :VtrKillRunner<CR>
 noremap  <silent>tl :VtrSendLinesToRunner!<CR>
 nnoremap ta :call tmux#attachToNext()<CR>

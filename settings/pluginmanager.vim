@@ -66,5 +66,6 @@ call plug#begin('~/.config/nvim/plugged')
   " JavaScript
   Plug 'heavenshell/vim-jsdoc'
   Plug 'pangloss/vim-javascript', { 'do': 'yarn global add js-beautify' }
+  Plug 'mxw/vim-jsx'
 call plug#end()
 
