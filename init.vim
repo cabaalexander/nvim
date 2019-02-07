@@ -24,4 +24,5 @@ so ~/.config/nvim/settings/mappings/leader.vim
 so ~/.config/nvim/settings/mappings/localleader.vim
 so ~/.config/nvim/settings/mappings/normal.vim
 so ~/.config/nvim/settings/mappings/visual.vim
+so ~/.config/nvim/settings/mappings/terminal.vim
 
