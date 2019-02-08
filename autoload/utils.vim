@@ -10,19 +10,19 @@ endfunction
 function! utils#obsessed() abort
     " Tries to and creates a session
     if exists(':Obsession') < 1
-        echom "Obsession plugin not installed"
+        echom 'Obsession plugin not installed'
         return 1
     endif
 
     let l:status = ObsessionStatus()
     let l:session = filereadable('Session.vim')
 
-    if !l:session || l:status == '[S]'
+    if !l:session || l:status ==# '[S]'
         execute('Obsession')
-    elseif l:status == '[$]'
-        echom "You're Obsessed"
+    elseif l:status ==# '[$]'
+        echom 'Session restored'
     elseif l:session && strlen(l:status) == 0
-        echom "You have a session file, to restore it run: nvim -S"
+        echom 'You have a session file, to restore it run: nvim -S'
     endif
 endfunction
 
