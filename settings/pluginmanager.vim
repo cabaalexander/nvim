@@ -24,12 +24,14 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'easymotion/vim-easymotion'
   Plug 'tpope/vim-surround'
   Plug 'christoomey/vim-tmux-navigator'
+  Plug 'fisadev/dragvisuals.vim'
 
   " Text Objects
   Plug 'kana/vim-textobj-user'
   Plug 'michaeljsmith/vim-indent-object'
   Plug 'kana/vim-textobj-entire'
   Plug 'kana/vim-textobj-line'
+  Plug 'osyo-manga/vim-textobj-blockwise'
 
   " Autocompletion
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
