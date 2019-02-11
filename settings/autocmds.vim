@@ -33,8 +33,8 @@ augroup vimrcEx
   " Terminal mode
   au TermOpen * :call TermAU()
   function! TermAU() abort
-      set nonumber
-      set norelativenumber
+      setlocal nonumber
+      setlocal norelativenumber
   endfunction
 
 augroup END

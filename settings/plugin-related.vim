@@ -18,7 +18,7 @@ let g:NERDTreeIgnore=utils#nerdtreeIgnore()
 " Emmet
 let g:user_emmet_leader_key = '<NOP>'
 let g:user_emmet_mode = 'nv'
-map <leader><tab> <Plug>(emmet-expand-abbr)
+map <leader><tab> bE<Plug>(emmet-expand-abbr)
 
 " Color scheme
 let g:srcery_transparent_background = 1
