@@ -46,3 +46,16 @@ snippet     expression
 alias       exp
 options     word
     $((${0}))
+
+
+snippet     relative-require
+alias       req rel
+options     head
+    # Relative require
+    ${1:scriptname}=${BASH_SOURCE%/*}
+    if [[ ! -d "$$1" ]]
+    then
+      $1=$(dirname "\$0")
+    fi
+
+    . "$$1" ./${0:TARGET}
