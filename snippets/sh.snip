@@ -59,3 +59,15 @@ options     head
     fi
 
     . "$$1" ./${0:TARGET}
+
+
+snippet     trap
+alias       trap tr
+options     head
+    trap '{ rm -f "${0:TARGET}" ; }' SIGINT SIGTERM EXIT
+
+
+snippet     underline-msg
+alias       unl undl
+options     head
+    printf "%0.s-" $(seq 1 ${#${0:TARGET}})
