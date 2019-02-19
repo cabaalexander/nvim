@@ -29,6 +29,6 @@ nnoremap <buffer> <leader>d :JsDoc<CR>
 
 let @f='ifunction () {}iOi' " Function
 let @k='oconsole.log(''%c{0}''.replace(''{0}'', ), ''background-color: black; color: white; font-size: 48px;'')==f)i' " Formatted Console.log
-let @l='oconsole.log()==f)' " Console.log
+let @l='oconsole.log()==f)i' " Console.log
 let @o='i{}iOi' " Object
 

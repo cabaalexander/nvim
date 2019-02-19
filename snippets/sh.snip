@@ -1,6 +1,19 @@
-snippet     getopts
+snippet     options
+alias       op opts
 options     head
-alias       op opt
+    while getopts ":${1:#:OPTION}" OPT; do
+        case $OPT in
+            $1) ${2:OPT_VAL="$OPTARG"} ;;
+            *) # do default stuff ;;
+        esac
+    done
+    shift $((OPTIND - 1))
+    ${0:TARGET}
+
+
+snippet     getopts-long
+options     head
+alias       op-lg oplg
     for ${1:\ARG} in "$@"
     do
     case "$$1" in
@@ -43,7 +56,7 @@ alias       bin binf
 
 
 snippet     expression
-alias       exp
+alias       exp expr
 options     word
     $((${0}))
 
