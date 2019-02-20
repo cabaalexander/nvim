@@ -19,6 +19,9 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'ludovicchabant/vim-gutentags'
   Plug 'cabaalexander/vim-tmux-runner'
   Plug 'tpope/vim-repeat'
+  Plug 'rstacruz/vim-closer'
+  Plug 'tpope/vim-endwise'
+  Plug 'rstacruz/vim-hyperstyle'
 
   " Movement / Modes
   Plug 'easymotion/vim-easymotion'

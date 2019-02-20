@@ -32,7 +32,8 @@ nnoremap <silent> <localleader>c :call utils#toggleConceal()<CR>
 nnoremap <silent> <localleader>q :bufdo bd<CR>
 
 " ALE
-nnoremap <localleader>h :ALEDetail<CR>
+nnoremap <localleader>ad :ALEDetail<CR>
+nnoremap <localleader>af :ALEFix<CR>
 
 
 " ############
@@ -52,4 +53,5 @@ nnoremap <silent> <localleader>sdoge :read ${HOME}/.config/nvim/snippets/doge.tx
 
 " Sort lines
 vnoremap <localleader>o :sort<CR>
+vnoremap <localleader>n :norm!<space>
 
