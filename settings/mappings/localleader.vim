@@ -53,5 +53,5 @@ nnoremap <silent> <localleader>sdoge :read ${HOME}/.config/nvim/snippets/doge.tx
 
 " Sort lines
 vnoremap <localleader>o :sort<CR>
-vnoremap <localleader>n :norm!<space>
+vnoremap <localleader>n :norm<space>
 
