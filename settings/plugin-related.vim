@@ -110,7 +110,8 @@ let g:javascript_conceal_underscore_arrow_function = '▢'
 " vim-tmux-runner
 let g:vtr_filetype_runner_overrides = {
   \ 'sh': 'bash {file}',
-  \ 'javascript.jsx': 'node {file}'
+  \ 'javascript.jsx': 'node {file}',
+  \ 'go': 'go run {file}'
   \ }
 
 " neosnippet

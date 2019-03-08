@@ -28,6 +28,7 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'tpope/vim-surround'
   Plug 'christoomey/vim-tmux-navigator'
   Plug 'fisadev/dragvisuals.vim'
+  Plug 'andymass/vim-matchup'
 
   " Text Objects
   Plug 'kana/vim-textobj-user'
