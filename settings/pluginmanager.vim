@@ -56,6 +56,7 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'google/vim-searchindex'
   Plug 'tmux-plugins/vim-tmux'
   Plug 'srcery-colors/srcery-vim'
+  Plug 'yggdroot/indentline'
 
   " Search
   Plug 'brooth/far.vim'

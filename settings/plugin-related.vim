@@ -4,16 +4,29 @@ let g:airline_powerline_fonts = 1
 let g:airline_left_sep = "\uE0B4"
 let g:airline_right_sep = "\uE0B6"
 try
-  let g:airline_section_z = airline#section#create(["\uE0A1" . '%{line(".")}' . "\uE0A3" . '%{col(".")}'])
+  let g:airline_section_z = airline#section#create([
+    \ "\uE0A1" . '%{line(".")}' . "\uE0A3" . '%{col(".")}'
+    \ ])
 catch
 endtry
 
+" Devicons
+let g:WebDevIconsUnicodeDecorateFolderNodes = 1
+let g:DevIconsEnableFoldersOpenClose = 1
+let g:DevIconsEnableFolderExtensionPatternMatching = 1
+
+" Indentline
+let g:indentLine_char_list = ['|', '¦', '┆', '┊']
+
 " Nerdtree
-let NERDTreeQuitOnOpen = 1
-let NERDTreeAutoDeleteBuffer = 1
-let NERDTreeMinimalUI = 1
-let NERDTreeDirArrows = 1
+let g:NERDTreeQuitOnOpen = 1
+let g:NERDTreeAutoDeleteBuffer = 1
+let g:NERDTreeMinimalUI = 1
+let g:NERDTreeDirArrows = 1
 let g:NERDTreeIgnore=utils#nerdtreeIgnore()
+let g:NERDTreeWinSize=40
+let g:NERDTreeDirArrowExpandable = "\u00a0"
+let g:NERDTreeDirArrowCollapsible = "\u00a0"
 
 " Emmet
 let g:user_emmet_leader_key = '<NOP>'
@@ -92,20 +105,6 @@ let g:EditorConfig_exclude_patterns = ['fugitive://.*', 'scp://.*']
 " Gutentags
 let g:gutentags_ctags_exclude = ['*.css', '*.html', '*.js']
 let g:gutentags_cache_dir = '~/.vim/gutentags'
-
-" vim-javascript
-let g:javascript_plugin_jsdoc = 1
-let g:javascript_conceal_null                      = 'ø'
-let g:javascript_conceal_this                      = '@'
-let g:javascript_conceal_return                    = '⇚'
-let g:javascript_conceal_undefined                 = '¿'
-let g:javascript_conceal_NaN                       = 'Ͷ'
-let g:javascript_conceal_prototype                 = '¶'
-let g:javascript_conceal_static                    = '•'
-let g:javascript_conceal_super                     = 'Ω'
-let g:javascript_conceal_arrow_function            = '⇒'
-let g:javascript_conceal_noarg_arrow_function      = '▢'
-let g:javascript_conceal_underscore_arrow_function = '▢'
 
 " vim-tmux-runner
 let g:vtr_filetype_runner_overrides = {

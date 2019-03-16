@@ -22,6 +22,19 @@ augroup vimrcEx
     silent call utils#toggleGrip()
   endfunction
 
+  " notes
+  au FileType notes :call NotesAU()
+  function! NotesAU() abort
+      let b:indentLine_enabled = 0
+  endfunction
+
+  " NERDTree
+  au FileType nerdtree :call NERDTreeAU()
+  function! NERDTreeAU() abort
+      setlocal number
+      setlocal relativenumber
+  endfunction
+
   " Elm file types
   au FileType elm :call ElmAU()
   function! ElmAU() abort

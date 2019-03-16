@@ -31,9 +31,11 @@ nnoremap <silent> <localleader>c :call utils#toggleConceal()<CR>
 
 nnoremap <silent> <localleader>q :bufdo bd<CR>
 
+noremap  <silent> <localleader>tl :VtrSendLinesToRunner!<CR>
+
 " ALE
-nnoremap <localleader>ad :ALEDetail<CR>
-nnoremap <localleader>af :ALEFix<CR>
+nnoremap <silent> <localleader>ad :ALEDetail<CR>
+nnoremap <silent> <localleader>af :ALEFix<CR>
 
 
 " ############
