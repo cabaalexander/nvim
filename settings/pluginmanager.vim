@@ -22,6 +22,7 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'rstacruz/vim-closer'
   Plug 'tpope/vim-endwise'
   Plug 'rstacruz/vim-hyperstyle'
+  Plug 'samoshkin/vim-mergetool'
 
   " Movement / Modes
   Plug 'easymotion/vim-easymotion'

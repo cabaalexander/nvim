@@ -8,7 +8,7 @@ nnoremap <silent> <leader>v :NERDTreeFind<CR>
 nnoremap <silent> <leader>nb :bn!<CR>
 nnoremap <silent> <leader>pb :bp!<CR>
 
-" Ale: Move to the next/previous error
+" Ale
 nmap <silent> <leader>pe <Plug>(ale_previous_wrap)
 nmap <silent> <leader>ne <Plug>(ale_next_wrap)
 

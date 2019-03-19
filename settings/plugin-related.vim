@@ -116,3 +116,7 @@ let g:vtr_filetype_runner_overrides = {
 " neosnippet
 let g:neosnippet#snippets_directory='~/.config/nvim/snippets'
 let g:neosnippet#enable_completed_snippet = 1
+
+" vim-mergetool
+let g:mergetool_layout = 'mr'
+let g:mergetool_prefer_revision = 'local'
