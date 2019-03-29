@@ -11,6 +11,7 @@ set noerrorbells
 set wildmenu
 set list
 set cursorline
+set colorcolumn=80
 
 " Tab
 set expandtab

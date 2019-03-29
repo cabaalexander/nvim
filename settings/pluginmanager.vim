@@ -21,7 +21,8 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'tpope/vim-repeat'
   Plug 'rstacruz/vim-closer'
   Plug 'tpope/vim-endwise'
-  Plug 'rstacruz/vim-hyperstyle'
+  Plug 'jiangmiao/auto-pairs'
+  " Plug 'rstacruz/vim-hyperstyle'
   Plug 'samoshkin/vim-mergetool'
 
   " Movement / Modes
@@ -30,6 +31,8 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'christoomey/vim-tmux-navigator'
   Plug 'fisadev/dragvisuals.vim'
   Plug 'andymass/vim-matchup'
+  " TODO: Make this to work ¯\\_(ツ)_/¯
+  " Plug 'tpope/vim-projectionist'
 
   " Text Objects
   Plug 'kana/vim-textobj-user'
@@ -73,7 +76,10 @@ call plug#begin('~/.config/nvim/plugged')
 
   " JavaScript
   Plug 'heavenshell/vim-jsdoc'
-  Plug 'pangloss/vim-javascript', { 'do': 'yarn global add js-beautify' }
-  Plug 'mxw/vim-jsx'
+  Plug 'othree/yajs.vim', { 'do': 'yarn global add js-beautify' }
+  Plug 'maxmellon/vim-jsx-pretty'
+
+  " React
+  Plug 'ivo-donchev/goto-definition-plugin-for-react'
 call plug#end()
 

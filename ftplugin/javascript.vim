@@ -20,6 +20,7 @@ set shiftwidth=2
 
 " Add documentation to a function
 nnoremap <buffer> <leader>d :JsDoc<CR>
+nnoremap <buffer> <silent> <leader>D :call ReactGotoDef()<CR>
 
 " ##########
 " #        #
