@@ -22,10 +22,10 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'rstacruz/vim-closer'
   Plug 'tpope/vim-endwise'
   Plug 'jiangmiao/auto-pairs'
-  " Plug 'rstacruz/vim-hyperstyle'
   Plug 'samoshkin/vim-mergetool'
   Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
   Plug 'junegunn/vim-easy-align'
+  Plug 'AndrewRadev/splitjoin.vim'
 
   " Movement / Modes
   Plug 'easymotion/vim-easymotion'
@@ -33,8 +33,7 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'christoomey/vim-tmux-navigator'
   Plug 'fisadev/dragvisuals.vim'
   Plug 'andymass/vim-matchup'
-  " TODO: Make this to work ¯\\_(ツ)_/¯
-  " Plug 'tpope/vim-projectionist'
+  Plug 'tpope/vim-projectionist'
 
   " Text Objects
   Plug 'kana/vim-textobj-user'

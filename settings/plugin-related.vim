@@ -124,3 +124,17 @@ let g:mkdp_echo_preview_url = 1
 
 " ferret
 let g:FerretMap=0
+
+" " projectionist
+let g:projectionist_heuristics = {
+    \   '*': {
+    \     '*index.js': {
+    \       'alternate': '{dirname}/styled.js',
+    \       'type': 'source'
+    \     },
+    \     '*styled.js': {
+    \       'alternate': '{dirname}/index.js',
+    \       'type': 'style'
+    \     }
+    \   }
+    \ }

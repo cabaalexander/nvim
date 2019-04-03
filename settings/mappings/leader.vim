@@ -73,3 +73,6 @@ nnoremap <silent> <leader>hq :pclose<CR>
 
 " Disables search highlight
 nnoremap <silent> <leader>nh :noh<CR>
+
+" projectionist
+nnoremap <silent> <leader>pa :A<CR>
