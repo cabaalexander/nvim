@@ -14,14 +14,6 @@ augroup vimrcEx
   au VimEnter *
     \ :call utils#obsessed()
 
-  " On Leave
-  au VimLeave * :call VimLeaveAU()
-  function! VimLeaveAU() abort
-    " toggleGrip
-    let g:toggleGripBool=1
-    silent call utils#toggleGrip()
-  endfunction
-
   " notes
   au FileType notes :call NotesAU()
   function! NotesAU() abort

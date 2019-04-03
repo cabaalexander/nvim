@@ -120,3 +120,10 @@ let g:neosnippet#enable_completed_snippet = 1
 " vim-mergetool
 let g:mergetool_layout = 'mr'
 let g:mergetool_prefer_revision = 'local'
+
+" markdown-preview.nvim
+let g:mkdp_open_to_the_world = 1
+let g:mkdp_open_ip = '127.0.0.1'
+let g:mkdp_port = '35035'
+let g:mkdp_auto_close = 0
+let g:mkdp_echo_preview_url = 1

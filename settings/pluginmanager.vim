@@ -24,6 +24,7 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'jiangmiao/auto-pairs'
   " Plug 'rstacruz/vim-hyperstyle'
   Plug 'samoshkin/vim-mergetool'
+  Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
 
   " Movement / Modes
   Plug 'easymotion/vim-easymotion'

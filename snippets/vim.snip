@@ -1,8 +1,8 @@
 snippet     toggle
 alias       togg tog
 options     head
-    function! `trim(expand('%:t'), '.vim')`#${1:functionName}() abort
-        " Show or hide stuffs ;)
+    function! `expand('%:t:r')`#toggle${1:functionName}() abort
+        " now yes later no
         if !get(b:, '$1Bool')
             ${2:#:yes}
             let b:$1Bool=1 " toggle true

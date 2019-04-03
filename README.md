@@ -1,7 +1,7 @@
 <h1 align="center">nvim</h1>
 
 <div align="center">
-  <img src="/imgs/logo.png" />
+  <img src="./imgs/logo.png" />
 </div>
 
 <br>
@@ -33,7 +33,7 @@ git clone https://gitlab.com/cabaalexander/nvim ~/.config/nvim && nvim
 
 ### Start Screen
 
-![Start Screen](/imgs/start-screen.png)
+![Start Screen](./imgs/start-screen.png)
 
 ### Vim Init
-![Vim Init](/imgs/vim-init.png)
+![Vim Init](./imgs/vim-init.png)

@@ -17,6 +17,4 @@ setlocal spell
 " #        #
 " ##########
 
-" Toggle `grip` markdown server
-nnoremap <buffer> <C-p> :call utils#toggleGrip()<CR>
-
+nnoremap <buffer> <C-p> :call markdown#togglePreview()<CR>

@@ -82,26 +82,6 @@ function! utils#nerdtreeIgnore() abort
     return l:lines
 endfunction
 
-function! utils#toggleGrip() abort
-    " Starts or stops `grip` markdown server with the current `md` file
-    let l:port=get(g:, 'toogleGripPort', 8129)
-    let l:ip='0.0.0.0:' . string(l:port)
-    let l:cmd='silent !(grip --quiet ' . expand('%:p') . ' ' . l:ip .' & echo "$(getpid)" > ${HOME}/.cache/toggleGrip/pid) > /dev/null'
-    execute('!mkdir -p ${HOME}/.cache/toggleGrip')
-
-    if !get(g:, 'toggleGripBool')
-        execute(l:cmd)
-        redraw
-        echom 'Grip markdown server running at: ' . l:ip
-        let g:toggleGripBool=1 " toggle true
-    else
-        execute('silent !kill -9 $(< ${HOME}/.cache/toggleGrip/pid)')
-        redraw
-        echom 'Grip markdown server turned off'
-        let g:toggleGripBool=0 " toggle false
-    endif
-endfunction
-
 function! utils#toggleConceal() abort
     " Show or hide toggleConceal
     if !get(b:, 'toggleConcealBool')
