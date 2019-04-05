@@ -52,7 +52,7 @@ nnoremap <leader>pU :PlugUpgrade<CR>
 nnoremap <leader>o :Obsession<CR>
 
 " FZF
-nnoremap <leader>f :FZF<CR>
+nnoremap <leader>f :Files<CR>
 nnoremap <leader>b :Buffers<CR>
 nnoremap <leader>c :BCommits<CR>
 nnoremap <leader>C :Commits<CR>
@@ -62,6 +62,7 @@ nnoremap <leader>t :BTags<CR>
 nnoremap <leader>T :Tags<CR>
 nnoremap <leader>/ :History/<CR>
 nnoremap <leader>; :History:<CR>
+nnoremap <leader>: :Commands<CR>
 nnoremap <leader>m :Map<CR>
 nnoremap <leader>M :Marks<CR>
 
