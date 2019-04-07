@@ -4,14 +4,6 @@ nnoremap <silent> <leader>E :e!<CR>
 " NERDTree find current file in tree
 nnoremap <silent> <leader>v :NERDTreeFind<CR>
 
-" Move to next/previous buffer
-nnoremap <silent> <leader>nb :bn!<CR>
-nnoremap <silent> <leader>pb :bp!<CR>
-
-" Ale
-nmap <silent> <leader>pe <Plug>(ale_previous_wrap)
-nmap <silent> <leader>ne <Plug>(ale_next_wrap)
-
 " Delete current buffer
 nnoremap <leader>q :bd<CR>
 
@@ -75,10 +67,6 @@ nnoremap <leader>N :Note<space>
 " RIPGREP
 nnoremap <leader>F :Find<space>
 command! -bang -nargs=* Find call fzf#vim#grep( 'rg -g !.git --column --line-number --no-heading --fixed-strings --ignore-case --hidden --follow --color "always" '.shellescape(<q-args>), 1, <bang>0)
-
-" quickfix next and previous
-nnoremap <silent> <leader>nf :cn<CR>
-nnoremap <silent> <leader>pf :cN<CR>
 
 " gitgutter
 nnoremap <silent> <leader>hq :pclose<CR>

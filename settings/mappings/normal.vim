@@ -49,3 +49,15 @@ xmap <C-k> <Plug>(neosnippet_expand_target)
 " fzf
 nnoremap <C-p> :Rg<CR>
 
+" Ale
+nmap <silent>[e <Plug>(ale_previous_wrap)
+nmap <silent>]e <Plug>(ale_next_wrap)
+
+" Move to next/previous buffer
+nnoremap <silent>[b :bp!<CR>
+nnoremap <silent>]b :bn!<CR>
+
+" quickfix next and previous
+nnoremap <silent>[f :cN<CR>
+nnoremap <silent>]f :cn<CR>
+
