@@ -1,3 +1,6 @@
+" for linter warnings ¯\\_(ツ)_/¯
+scriptencoding utf-8
+
 " Editor
 set updatetime=200
 set nofoldenable
@@ -5,13 +8,13 @@ set conceallevel=1
 set concealcursor=nvic
 
 " UI
-set nu
-set rnu
+set number
+set relativenumber
 set noerrorbells
 set wildmenu
 set list
 set cursorline
-set colorcolumn=80
+let &colorcolumn=join(range(81,999),',')
 
 " Tab
 set expandtab
@@ -34,5 +37,5 @@ set wildignore+=*/node_modules,*/build
 let mapleader = "\<space>"
 
 " Change <localleader> key to backslash i.e. \
-let maplocalleader = ","
+let maplocalleader = ','
 
