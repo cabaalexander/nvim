@@ -14,7 +14,7 @@ set noerrorbells
 set wildmenu
 set list
 set cursorline
-let &colorcolumn=join(range(81,999),',')
+let &colorcolumn='80,'.join(range(120,999),',')
 
 " Tab
 set expandtab
