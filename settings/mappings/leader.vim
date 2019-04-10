@@ -66,7 +66,6 @@ nnoremap <leader>N :Note<space>
 
 " RIPGREP
 nnoremap <leader>F :Find<space>
-command! -bang -nargs=* Find call fzf#vim#grep( 'rg -g !.git --column --line-number --no-heading --fixed-strings --ignore-case --hidden --follow --color "always" '.shellescape(<q-args>), 1, <bang>0)
 
 " gitgutter
 nnoremap <silent> <leader>hq :pclose<CR>
