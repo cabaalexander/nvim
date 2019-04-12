@@ -29,7 +29,9 @@ nnoremap <localleader>tN :ShowTaggedNotes<CR>
 
 nnoremap <silent> <localleader>c :call utils#toggleConceal()<CR>
 
-nnoremap <silent> <localleader>q :bufdo bd<CR>
+" close things
+nnoremap <silent> <localleader>qa :bufdo bd<CR>
+nnoremap <silent> <localleader>qf :cclose<CR>
 
 noremap  <silent> <localleader>tl :VtrSendLinesToRunner!<CR>
 
