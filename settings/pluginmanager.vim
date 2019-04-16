@@ -82,5 +82,8 @@ call plug#begin('~/.config/nvim/plugged')
 
   " React
   Plug 'ivo-donchev/goto-definition-plugin-for-react'
+
+  " Go
+  Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 call plug#end()
 
