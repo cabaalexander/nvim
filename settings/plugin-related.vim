@@ -67,9 +67,6 @@ let g:ale_fixers = {
 let g:ale_completion_enabled = 1
 let g:ale_echo_msg_format = '[%linter%] %s'
 
-" Grip
-let g:toogleGripPort = 35035
-
 " Exuberant ctags
 let g:easytags_async = 1
 

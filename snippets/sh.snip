@@ -76,7 +76,7 @@ options     head
 snippet     trap
 alias       trap tr
 options     head
-    trap '{ rm -f "${0:TARGET}" ; }' SIGINT SIGTERM EXIT
+    trap '{ rm -rf "${0:TARGET}" ; }' SIGINT SIGTERM EXIT
 
 
 snippet     underline-msg
@@ -88,6 +88,4 @@ options     head
 snippet     function
 alias       function func
 options     head
-    ${1:#:name}(){
-        ${0:TARGET}
-    }
+    ${1:#:name}(){${0:TARGET}
