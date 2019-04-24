@@ -39,6 +39,11 @@ noremap  <silent> <localleader>tl :VtrSendLinesToRunner!<CR>
 nnoremap <silent> <localleader>ad :ALEDetail<CR>
 nnoremap <silent> <localleader>af :ALEFix<CR>
 
+" ferret
+nmap <localleader>fa <Plug>(FerretAck)
+nmap <localleader>fl <Plug>(FerretLack)
+nmap <localleader>fs <Plug>(FerretAckWord)
+nmap <localleader>fr <Plug>(FerretAcks)
 
 " ############
 " #          #

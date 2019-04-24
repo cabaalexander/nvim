@@ -62,12 +62,13 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'tmux-plugins/vim-tmux'
   Plug 'srcery-colors/srcery-vim'
   Plug 'yggdroot/indentline'
+  Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 
   " Search
-  Plug 'brooth/far.vim'
   Plug 'wincent/scalpel'
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
   Plug 'junegunn/fzf.vim'
+  Plug 'wincent/ferret'
 
   " Elm
   Plug 'elmcast/elm-vim'
