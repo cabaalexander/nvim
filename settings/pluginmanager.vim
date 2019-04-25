@@ -63,6 +63,7 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'srcery-colors/srcery-vim'
   Plug 'yggdroot/indentline'
   Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+  Plug 'ap/vim-buftabline'
 
   " Search
   Plug 'wincent/scalpel'

@@ -1,16 +1,10 @@
-" Airline / Powerline
-let g:airline#extensions#tabline#enabled = 1
-let g:airline_powerline_fonts = 1
-let g:airline_left_sep = "\uE0B4"
-let g:airline_right_sep = "\uE0B6"
-try
-  let g:airline_section_z = airline#section#create([
-    \ "\uE0A1" . '%{line(".")}' . "\uE0A3" . '%{col(".")}'
-    \ ])
-catch
-endtry
+" for linter warnings ¯\\_(ツ)_/¯
+scriptencoding utf-8
 
-" Devicons
+" Airline / Powerline
+let g:airline_powerline_fonts = 1
+
+" NERDTree / Devicons
 let g:WebDevIconsUnicodeDecorateFolderNodes = 1
 let g:DevIconsEnableFoldersOpenClose = 1
 let g:DevIconsEnableFolderExtensionPatternMatching = 1
