@@ -14,14 +14,14 @@ options     head
 snippet     getopts-long
 options     head
 alias       opl optsl optl
-    for ${1:\ARG} in "$@"; do
-    case "$$1" in
-        --${2:extension}=*)
-        ${3:EXTENSION}="${$1#*=}"
+    for $ARG in "$@"; do
+    case "$ARG" in
+        --${1:extension}=*)
+        ${2:EXTENSION}="${ARG#*=}"
         shift # past this arg
         ;;
-        --${5:default})
-        ${6:DEFAULT}=YES
+        --${3:default})
+        ${4:DEFAULT}=YES
         shift # past this arg
         ;;
         *) # unknown option ;;
@@ -33,9 +33,7 @@ alias       opl optsl optl
 snippet     echo
 options     head
 alias       ek
-    echo "${1}"
-    ${0}
-
+    echo "${0:TARGET}"
 
 snippet     bin-function
 options     head
@@ -89,3 +87,8 @@ snippet     function
 alias       function func
 options     head
     ${1:#:name}(){${0:TARGET}
+
+snippet     script-require
+alias       screq srq
+options     head
+    CURRENT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
