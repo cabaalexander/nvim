@@ -1,10 +1,10 @@
 function! markdown#togglePreview() abort
     " Show or hide stuffs ;)
-    if !get(b:, 'PreviewBool')
+    if !get(b:, 'MarkdownPreviewToggleBool')
         execute('MarkdownPreview')
-        let b:PreviewBool=1 " toggle true
+        let b:MarkdownPreviewToggleBool=1 " toggle true
     else
         execute('MarkdownPreviewStop')
-        let b:PreviewBool=0 " toggle false
+        let b:MarkdownPreviewToggleBool=0 " toggle false
     endif
 endfunction
