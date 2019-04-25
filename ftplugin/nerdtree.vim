@@ -7,10 +7,10 @@
 "   s - open files in vertically split windows
 "   t - open files in new tabs
 
-execute 'vnoremap <buffer> <C-' . g:NERDTreeMapActivateNode . '> :call <SID>OpenMultiple("p")<CR>'
-execute 'vnoremap <buffer> <C-' . g:NERDTreeMapOpenSplit . '> :call <SID>OpenMultiple("h")<CR>'
-execute 'vnoremap <buffer> <C-' . g:NERDTreeMapOpenVSplit . '> :call <SID>OpenMultiple("v")<CR>'
-execute 'vnoremap <buffer> <C-' . g:NERDTreeMapOpenInTab . '> :call <SID>OpenMultiple("t")<CR>'
+execute 'vnoremap <buffer> <leader>' . g:NERDTreeMapActivateNode . ' :call <SID>OpenMultiple("p")<CR>'
+execute 'vnoremap <buffer> <leader>' . g:NERDTreeMapOpenSplit . ' :call <SID>OpenMultiple("h")<CR>'
+execute 'vnoremap <buffer> <leader>' . g:NERDTreeMapOpenVSplit . ' :call <SID>OpenMultiple("v")<CR>'
+execute 'vnoremap <buffer> <leader>' . g:NERDTreeMapOpenInTab . ' :call <SID>OpenMultiple("t")<CR>'
 
 function! s:OpenMultiple(target) range
     let curLine = a:firstline

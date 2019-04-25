@@ -10,9 +10,13 @@ augroup vimrcEx
     \   execute "normal! g`\"" |
     \ endif
 
-  " On Enter
-  au VimEnter *
-    \ :call utils#obsessed()
+  " " On Enter
+  au VimEnter * :call VimEnterAU()
+  function! VimEnterAU() abort
+      :call utils#obsessed()
+      setlocal conceallevel=0
+      setlocal concealcursor=nvic
+  endfunction
 
   " notes
   au FileType notes :call NotesAU()
