@@ -61,3 +61,6 @@ nnoremap <silent>]b :bn!<CR>
 nnoremap <silent>[f :cN<CR>
 nnoremap <silent>]f :cn<CR>
 
+" tabs next and previous
+nnoremap <silent>]t gt<CR>
+nnoremap <silent>[t gT<CR>
