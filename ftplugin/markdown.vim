@@ -17,4 +17,4 @@ setlocal spell
 " #        #
 " ##########
 
-nnoremap <buffer> <C-p> :call markdown#togglePreview()<CR>
+nmap <C-p> <Plug>MarkdownPreviewToggle<CR>

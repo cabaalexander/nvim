@@ -5,10 +5,10 @@ nnoremap <silent> <leader>E :e!<CR>
 nnoremap <silent> <leader>v :NERDTreeFind<CR>
 
 " Delete current buffer
-nnoremap <leader>q :bd<CR>
+nnoremap <silent> <leader>q :bd<CR>
 
 " Force delete current buffer
-nnoremap <leader>Q :bd!<CR>
+nnoremap <silent> <leader>Q :bd!<CR>
 
 " Saves current buffer
 nnoremap <leader>s :w<CR>
