@@ -59,7 +59,9 @@ let g:ale_fixers = {
 \   ],
 \}
 let g:ale_completion_enabled = 1
-let g:ale_echo_msg_format = '[%linter%] %s'
+let g:ale_echo_cursor = 0
+let g:ale_virtualtext_prefix = '👉 '
+let g:ale_virtualtext_cursor = 1
 
 " Exuberant ctags
 let g:easytags_async = 1
