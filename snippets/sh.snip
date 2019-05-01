@@ -59,7 +59,7 @@ options     word
 
 
 snippet     relative-require
-alias       req rel
+alias       rel
 options     head
     # Relative require
     ${1:scriptname}=${BASH_SOURCE%/*}
@@ -89,6 +89,13 @@ options     head
     ${1:#:name}(){${0:TARGET}
 
 snippet     script-require
-alias       screq srq
+alias       req
 options     head
     CURRENT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+snippet     strict
+alias       strict
+options     head
+    #!/bin/bash
+    set -Eeuo pipefail
+    ${0:TARGET}
