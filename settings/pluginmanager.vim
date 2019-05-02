@@ -25,6 +25,7 @@ call plug#begin('~/.config/nvim/plugged')
   " Plug 'rstacruz/vim-hyperstyle'
   Plug 'samoshkin/vim-mergetool'
   Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
+  Plug 'junegunn/vim-easy-align'
 
   " Movement / Modes
   Plug 'easymotion/vim-easymotion'

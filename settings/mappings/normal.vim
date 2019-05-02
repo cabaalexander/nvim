@@ -64,3 +64,7 @@ nnoremap <silent>]f :cn<CR>
 " tabs next and previous
 nnoremap <silent>]t gt<CR>
 nnoremap <silent>[t gT<CR>
+
+" easy-align
+xmap ga <Plug>(EasyAlign)
+nmap ga <Plug>(EasyAlign)

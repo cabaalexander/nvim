@@ -43,7 +43,7 @@ nnoremap <leader>pU :PlugUpgrade<CR>
 " Calls `Obsession` plugin
 nnoremap <leader>o :Obsession<CR>
 
-" FZF
+" fzf
 nnoremap <leader>f :Files<CR>
 nnoremap <leader>b :Buffers<CR>
 nnoremap <leader>c :BCommits<CR>
@@ -57,6 +57,7 @@ nnoremap <leader>; :History:<CR>
 nnoremap <leader>: :Commands<CR>
 nnoremap <leader>m :Map<CR>
 nnoremap <leader>M :Marks<CR>
+nnoremap <leader>h :Helptags<CR>
 
 " vim-tmux-runner
 nnoremap <silent> <leader>r :VtrSendFile!<CR>
