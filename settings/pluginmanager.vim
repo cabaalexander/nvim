@@ -26,6 +26,8 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
   Plug 'junegunn/vim-easy-align'
   Plug 'AndrewRadev/splitjoin.vim'
+  Plug 'godlygeek/tabular'
+  Plug 'plasticboy/vim-markdown'
 
   " Movement / Modes
   Plug 'easymotion/vim-easymotion'
