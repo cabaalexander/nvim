@@ -17,13 +17,16 @@ snippet     header-doc
 alias       hdd
 options     head
     " ============================================================================
-    " File:        doscript.vim
-    " Description: Creates an executable *.sh file in the current directory
+    " File:        `expand('%:t')`
+    " Description: ${1:TARGET}
     " Maintainer:  Alexander Caba <cabaalexander321@gmail.com>
-    " License:     This program is free software. It comes without any warranty,
-    "              to the extent permitted by applicable law. You can redistribute
-    "              it and/or modify it under the terms of the Do What The Fuck You
-    "              Want To Public License, Version 2, as published by Sam Hocevar.
-    "              See http://sam.zoy.org/wtfpl/COPYING for more details.
+    " License:     ${2:GNU GPLv3}
     "
     " ============================================================================
+    scriptencoding utf-8
+    ${3}
+
+snippet     encoding
+alias       enc
+options     head
+    scriptencoding utf-8

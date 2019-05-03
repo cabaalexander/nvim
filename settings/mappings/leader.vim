@@ -75,6 +75,6 @@ nnoremap <silent> <leader>hq :pclose<CR>
 nnoremap <silent> <leader>nh :noh<CR>
 
 " projectionist
-nnoremap <silent> <leader>pa :A<CR>
+nnoremap <silent> <leader>paa :A<CR>
 nnoremap <silent> <leader>pas :AS<CR>
 nnoremap <silent> <leader>pav :AV<CR>

@@ -9,6 +9,7 @@
 "              See http://sam.zoy.org/wtfpl/COPYING for more details.
 "
 " ============================================================================
+scriptencoding utf-8
 
 if exists('g:loaded_nerdtree_doscript')
     finish
