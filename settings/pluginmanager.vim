@@ -66,6 +66,7 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'yggdroot/indentline'
   Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
   Plug 'ap/vim-buftabline'
+  Plug 'cabaalexander/nerdtree-doscript'
 
   " Search
   Plug 'wincent/scalpel'
