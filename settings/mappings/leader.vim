@@ -78,3 +78,9 @@ nnoremap <silent> <leader>nh :noh<CR>
 nnoremap <silent> <leader>paa :A<CR>
 nnoremap <silent> <leader>pas :AS<CR>
 nnoremap <silent> <leader>pav :AV<CR>
+
+" buftabline
+for i in range(1, g:buftabline_plug_max)
+    exe 'map <leader>'.i.' <Plug>BufTabLine.Go('.i.')'
+endfor
+

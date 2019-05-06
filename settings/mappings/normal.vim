@@ -46,9 +46,6 @@ imap <C-k> <Plug>(neosnippet_expand_or_jump)
 smap <C-k> <Plug>(neosnippet_expand_or_jump)
 xmap <C-k> <Plug>(neosnippet_expand_target)
 
-" fzf
-nnoremap <C-p> :Rg <C-r><C-w><CR>
-
 " Ale
 nmap <silent>[e <Plug>(ale_previous_wrap)
 nmap <silent>]e <Plug>(ale_next_wrap)

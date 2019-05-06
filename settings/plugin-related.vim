@@ -125,7 +125,7 @@ let g:mkdp_echo_preview_url = 1
 " ferret
 let g:FerretMap=0
 
-" " projectionist
+" projectionist
 let g:projectionist_heuristics = {
     \   '*': {
     \     '*index.js': {
@@ -138,3 +138,9 @@ let g:projectionist_heuristics = {
     \     }
     \   }
     \ }
+
+" buftabline
+let g:buftabline_numbers = 2
+let g:buftabline_plug_max = 9
+let g:buftabline_indicators = 1
+

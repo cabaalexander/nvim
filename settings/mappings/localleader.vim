@@ -45,6 +45,9 @@ nmap <localleader>fl <Plug>(FerretLack)
 nmap <localleader>fs <Plug>(FerretAckWord)
 nmap <localleader>fr <Plug>(FerretAcks)
 
+" fzf
+nnoremap <localleader>fc :Rg <C-r><C-w><CR>
+
 " ############
 " #          #
 " # Snippets #
