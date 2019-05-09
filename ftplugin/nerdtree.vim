@@ -6,10 +6,23 @@
 
 " # Open visually selected files
 " # ============================
-execute 'vnoremap <buffer> <leader>' . g:NERDTreeMapActivateNode . ' :call <SID>OpenMultiple("p")<CR>'
-execute 'vnoremap <buffer> <leader>' . g:NERDTreeMapOpenSplit . ' :call <SID>OpenMultiple("h")<CR>'
-execute 'vnoremap <buffer> <leader>' . g:NERDTreeMapOpenVSplit . ' :call <SID>OpenMultiple("v")<CR>'
-execute 'vnoremap <buffer> <leader>' . g:NERDTreeMapOpenInTab . ' :call <SID>OpenMultiple("t")<CR>'
+execute 'vnoremap <buffer> <leader>o :call <SID>OpenMultiple("p")<CR>'
+execute 'vnoremap <buffer> <leader>x :call <SID>OpenMultiple("h")<CR>'
+execute 'vnoremap <buffer> <leader>v :call <SID>OpenMultiple("v")<CR>'
+
+function! s:buffer_is_empty()
+    if line('$') == 1 && getline(1) ==# ''
+        return 1
+    else
+        return 0
+    endif
+endfunction
+
+function! s:close_if_empty() abort
+    if s:buffer_is_empty()
+        silent bd!
+    endif
+endfunction
 
 function! s:OpenMultiple(target) range
     let curLine = a:firstline
@@ -22,6 +35,7 @@ function! s:OpenMultiple(target) range
         endif
         let curLine += 1
     endwhile
+    bufdo call <SID>close_if_empty()
     if g:NERDTreeQuitOnOpen
         NERDTreeClose
     endif
