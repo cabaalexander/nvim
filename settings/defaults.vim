@@ -13,6 +13,7 @@ set wildmenu
 set list
 set cursorline
 set cursorcolumn
+set listchars=tab:→\ ,trail:·,extends:⟩,precedes:⟨
 let &colorcolumn='80'
 
 " Tab

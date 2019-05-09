@@ -66,6 +66,9 @@ nnoremap <silent>[t gT<CR>
 xmap ga <Plug>(EasyAlign)
 nmap ga <Plug>(EasyAlign)
 
+" search visually highlight
+nnoremap / /\v
+
 " ##########
 " #        #
 " # insert #

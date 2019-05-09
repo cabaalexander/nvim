@@ -30,6 +30,7 @@ nnoremap <leader>X :qa!<CR>
 
 " Show Git's Blame :: Plugin Related
 nnoremap <leader>gb :Gblame<CR>
+noremap <leader>gB :Gbrowse<CR>
 nnoremap <leader>gd :Gdiff<CR>
 nnoremap <leader>gs :GFiles?<CR>
 

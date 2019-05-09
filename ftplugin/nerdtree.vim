@@ -35,9 +35,9 @@ function! s:OpenMultiple(target) range
         endif
         let curLine += 1
     endwhile
-    bufdo call <SID>close_if_empty()
     if g:NERDTreeQuitOnOpen
         NERDTreeClose
     endif
+    bufdo call <SID>close_if_empty()
     call nerdtree#echo('')
 endfunction

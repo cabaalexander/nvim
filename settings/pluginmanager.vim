@@ -57,6 +57,7 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'scrooloose/nerdtree'
   Plug 'Xuyuanp/nerdtree-git-plugin'
   Plug 'tpope/vim-fugitive'
+  Plug 'tpope/vim-rhubarb'
   Plug 'majutsushi/tagbar'
   Plug 'wesq3/vim-windowswap'
   Plug 'ryanoasis/vim-devicons'

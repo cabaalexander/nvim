@@ -121,6 +121,7 @@ let g:mkdp_open_ip = '127.0.0.1'
 let g:mkdp_port = '35035'
 let g:mkdp_auto_close = 0
 let g:mkdp_echo_preview_url = 1
+let g:mkdp_auto_close = 0
 
 " ferret
 let g:FerretMap=0
@@ -143,4 +144,7 @@ let g:projectionist_heuristics = {
 let g:buftabline_numbers = 2
 let g:buftabline_plug_max = 9
 let g:buftabline_indicators = 1
+
+" auto-pairs
+let g:AutoPairsMultilineClose = 0
 
