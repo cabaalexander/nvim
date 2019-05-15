@@ -14,19 +14,20 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'mattn/emmet-vim'
   Plug 'tpope/vim-obsession'
   Plug 'w0rp/ale'
-  Plug 'xolox/vim-notes', {'do': 'mkdir ~/.notes'}
+  Plug 'xolox/vim-notes', { 'do': 'mkdir ~/.notes'}
   Plug 'editorconfig/editorconfig-vim'
   Plug 'ludovicchabant/vim-gutentags'
-  Plug 'cabaalexander/vim-tmux-runner'
+  Plug 'cabaalexander/vim-tmux-runner', { 'on':
+              \ ['VtrSendCommandToRunner', 'VtrSendFile', 'VtrAttachToPane'] }
   Plug 'tpope/vim-repeat'
   Plug 'rstacruz/vim-closer'
   Plug 'tpope/vim-endwise'
   Plug 'jiangmiao/auto-pairs'
-  Plug 'samoshkin/vim-mergetool'
+  Plug 'samoshkin/vim-mergetool', { 'on': 'MergetoolStart' }
   Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
   Plug 'junegunn/vim-easy-align'
   Plug 'AndrewRadev/splitjoin.vim'
-  Plug 'godlygeek/tabular'
+  Plug 'godlygeek/tabular', { 'for': 'markdown' }
   Plug 'plasticboy/vim-markdown'
 
   " Movement / Modes
@@ -54,20 +55,23 @@ call plug#begin('~/.config/nvim/plugged')
   " UI
   Plug 'airblade/vim-gitgutter'
   Plug 'vim-airline/vim-airline'
-  Plug 'scrooloose/nerdtree'
-  Plug 'Xuyuanp/nerdtree-git-plugin'
+  Plug 'scrooloose/nerdtree', { 'on': ['NERDTreeToggle', 'NERDTreeFind'] }
+  Plug 'Xuyuanp/nerdtree-git-plugin', { 'on':
+              \ ['NERDTreeToggle', 'NERDTreeFind'] }
   Plug 'tpope/vim-fugitive'
   Plug 'tpope/vim-rhubarb'
-  Plug 'majutsushi/tagbar'
+  Plug 'majutsushi/tagbar', { 'on': 'TagbarToggle' }
   Plug 'wesq3/vim-windowswap'
   Plug 'ryanoasis/vim-devicons'
   Plug 'google/vim-searchindex'
   Plug 'tmux-plugins/vim-tmux'
   Plug 'srcery-colors/srcery-vim'
   Plug 'yggdroot/indentline'
-  Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+  Plug 'tiagofumo/vim-nerdtree-syntax-highlight', { 'on':
+              \ ['NERDTreeToggle', 'NERDTreeFind'] }
   Plug 'ap/vim-buftabline'
-  Plug 'cabaalexander/nerdtree-doscript'
+  Plug 'cabaalexander/nerdtree-doscript', { 'on':
+              \ ['NERDTreeToggle', 'NERDTreeFind'] }
 
   " Search
   Plug 'wincent/scalpel'
@@ -76,20 +80,20 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'wincent/ferret'
 
   " Elm
-  Plug 'elmcast/elm-vim'
+  Plug 'elmcast/elm-vim', { 'for': 'elm' }
 
   " GraphQL
   Plug 'jparise/vim-graphql'
 
   " JavaScript
-  Plug 'heavenshell/vim-jsdoc'
+  Plug 'heavenshell/vim-jsdoc', { 'for': 'javascript' }
   Plug 'othree/yajs.vim', { 'do': 'yarn global add js-beautify' }
   Plug 'maxmellon/vim-jsx-pretty'
 
   " React
-  Plug 'ivo-donchev/goto-definition-plugin-for-react'
+  Plug 'ivo-donchev/goto-definition-plugin-for-react', { 'for': 'javascript' }
 
   " Go
-  Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+  Plug 'fatih/vim-go', { 'for': 'go', 'do': ':GoUpdateBinaries' }
 call plug#end()
 

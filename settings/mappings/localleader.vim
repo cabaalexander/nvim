@@ -46,7 +46,7 @@ nmap <localleader>fw <Plug>(FerretAckWord)
 nmap <localleader>fr <Plug>(FerretAcks)
 
 " fzf
-nnoremap <localleader>fc :Rg <C-r><C-w><CR>
+nnoremap <localleader>Fw :Rg <C-r><C-w><CR>
 
 " ############
 " #          #
