@@ -6,6 +6,7 @@ nnoremap <silent> <localleader>es :NeoSnippetEdit<CR>
 
 " Shows the path of the current file
 nnoremap <localleader>p :echo expand('%:p')<CR>
+nnoremap <localleader>cp :let @+=expand('%:t')<CR>
 
 " Open last buffer
 nnoremap <localleader><localleader> <C-^>

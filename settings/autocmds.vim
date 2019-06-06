@@ -14,8 +14,6 @@ augroup vimrcEx
   au VimEnter * :call VimEnterAU()
   function! VimEnterAU() abort
       :call utils#obsessed()
-      setlocal conceallevel=0
-      setlocal concealcursor=nvic
   endfunction
 
   " notes
