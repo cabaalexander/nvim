@@ -104,7 +104,8 @@ let g:gutentags_cache_dir = '~/.vim/gutentags'
 let g:vtr_filetype_runner_overrides = {
   \ 'sh': 'bash {file}',
   \ 'javascript.jsx': 'node {file}',
-  \ 'go': 'go run {file}'
+  \ 'go': 'go run {file}',
+  \ 'html': 'live-server --port=$RANDOM {file}'
   \ }
 
 " neosnippet
