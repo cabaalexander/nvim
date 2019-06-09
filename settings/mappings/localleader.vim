@@ -33,6 +33,8 @@ nnoremap <silent> <localleader>c :call utils#toggleConceal()<CR>
 " close things
 nnoremap <silent> <localleader>qa :silent bufdo bd<CR>
 nnoremap <silent> <localleader>qf :cclose<CR>
+nnoremap <silent> <localleader>qh :pclose<CR>
+
 
 noremap  <silent> <localleader>tl :VtrSendLinesToRunner!<CR>
 

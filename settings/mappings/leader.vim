@@ -69,9 +69,6 @@ nnoremap <leader>N :Note<space>
 " RIPGREP
 nnoremap <leader>F :Find<space>
 
-" gitgutter
-nnoremap <silent> <leader>hq :pclose<CR>
-
 " Disables search highlight
 nnoremap <silent> <leader>nh :noh<CR>
 

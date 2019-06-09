@@ -28,3 +28,9 @@ command! -bang -nargs=* Find
 command! -bang -nargs=? -complete=dir Files
   \ call fzf#vim#files(<q-args>, fzf#vim#with_preview(), <bang>0)
 
+" Puts the output of a command to a new window
+command! -nargs=+ -complete=command Output call utils#output(<f-args>)
+
+" Put bash command into a new window
+command! -nargs=* -complete=shellcmd R new | setlocal buftype=nofile bufhidden=hide noswapfile | r !<args>
+

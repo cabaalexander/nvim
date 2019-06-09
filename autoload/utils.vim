@@ -10,18 +10,25 @@ endfunction
 function! utils#obsessed() abort
     " Tries to and creates a session
     if exists(':Obsession') < 1
-        echom 'Obsession plugin not installed'
+        echoerr 'Obsession plugin not installed'
         return 1
     endif
 
-    let l:status = ObsessionStatus()
-    let l:session = filereadable('Session.vim')
+    let l:pathFirstPart = split(getcwd(), '/')[0]
 
-    if !l:session || l:status ==# '[S]'
+    if l:pathFirstPart !=# 'home'
+        return 1
+    endif
+
+    let l:file = 'Session.vim'
+    let l:status = ObsessionStatus()
+    let l:sessionExists = filereadable(l:file)
+
+    if !l:sessionExists || l:status ==# '[S]'
         execute('Obsession')
     elseif l:status ==# '[$]'
         echom 'Session restored'
-    elseif l:session && strlen(l:status) == 0
+    elseif l:sessionExists && strlen(l:status) == 0
         echom 'You have a session file, to restore it run: nvim -S'
     endif
 endfunction
@@ -92,3 +99,23 @@ function! utils#toggleConceal() abort
         let b:toggleConcealBool=0 " toggle false
     endif
 endfunction
+
+function! utils#output(...)
+    " this function output the result of the
+    " Ex command into a split scratch buffer
+    let cmd = join(a:000, ' ')
+    let temp_reg = @"
+    redir @"
+    silent! execute cmd
+    redir END
+    let output = copy(@")
+    let @" = temp_reg
+    if empty(output)
+        echoerr 'no output'
+    else
+        new
+        setlocal buftype=nofile bufhidden=wipe noswapfile nobuflisted
+        put! =output
+    endif
+endfunction
+
