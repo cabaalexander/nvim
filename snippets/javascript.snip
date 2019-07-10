@@ -1,14 +1,19 @@
 snippet     react-func-stateless
-alias       rles funcless
+alias       rles reless
 options     head
     import React from 'react';
+    import PropTypes from 'prop-types';
     import * as styles from './styled';
 
-    function ${1:functionName}(${2:#:props}) {
+    const ${1:functionName} = (${2:\{\}}) => {
       return (
         ${0}
       );
-    }
+    };
+
+    $1.defaultProps = $2;
+
+    $1.propTypes = $2;
 
     export default $1;
 
@@ -21,3 +26,10 @@ options     word
 snippet     clog
 options     word
     console.log(${0:TARGET})
+
+# styled components
+snippet     styled-class
+alias       csx
+options     head
+  export const ${1:foo}Class = css\`
+  \`;

@@ -1,9 +1,9 @@
 snippet     options
 alias       op opts opt
 options     head
-    while getopts ":${1:#:OPTION}" OPT; do
-        case $OPT in
-            $1) ${2:OPT_VAL="$OPTARG"} ;;
+    while getopts ":${1:#:OPTION}" opt; do
+        case $opt in
+            $1) ${2:opt_val="$OPTARG"} ;;
             *) # do default stuff ;;
         esac
     done

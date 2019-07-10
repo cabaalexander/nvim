@@ -59,9 +59,7 @@ let g:ale_fixers = {
 \   ],
 \}
 let g:ale_completion_enabled = 1
-let g:ale_echo_cursor = 0
-let g:ale_virtualtext_prefix = '👉 '
-let g:ale_virtualtext_cursor = 1
+let g:ale_echo_msg_format = '[%linter%] %s'
 
 " Exuberant ctags
 let g:easytags_async = 1
@@ -105,7 +103,7 @@ let g:vtr_filetype_runner_overrides = {
   \ 'sh': 'bash {file}',
   \ 'javascript.jsx': 'node {file}',
   \ 'go': 'go run {file}',
-  \ 'html': 'live-server --port=$RANDOM {file}'
+  \ 'html': 'live-server --port=$RANDOM'
   \ }
 
 " neosnippet
