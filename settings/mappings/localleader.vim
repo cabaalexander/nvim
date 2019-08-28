@@ -45,11 +45,11 @@ nnoremap <silent> <localleader>af :ALEFix<CR>
 " ferret
 nmap <localleader>ff <Plug>(FerretAck)
 nmap <localleader>fl <Plug>(FerretLack)
-nmap <localleader>fw <Plug>(FerretAckWord)
+nmap <localleader>Fw <Plug>(FerretAckWord)
 nmap <localleader>fr <Plug>(FerretAcks)
 
 " fzf
-nnoremap <localleader>Fw :Rg <C-r><C-w><CR>
+nnoremap <localleader>fw :Rg <C-r><C-w><CR>
 
 " ############
 " #          #

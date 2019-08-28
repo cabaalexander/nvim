@@ -147,3 +147,5 @@ let g:buftabline_indicators = 1
 " auto-pairs
 let g:AutoPairsMultilineClose = 0
 
+" jdsoc
+let g:jsdoc_enable_es6 = 1
