@@ -20,7 +20,7 @@ command! -bang -nargs=* Rg
 " Main `rg` find (that I use)
 command! -bang -nargs=* Find
   \ call fzf#vim#grep(
-  \   'rg -g !.git --column --line-number --no-heading --fixed-strings --ignore-case --hidden --follow --color "always" '.shellescape(<q-args>), 1,
+  \   'rg -g !node_modules !.git --column --line-number --no-heading --fixed-strings --ignore-case --hidden --follow --color "always" '.shellescape(<q-args>), 1,
   \   <bang>0)
 
 
