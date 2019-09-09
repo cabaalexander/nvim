@@ -29,6 +29,7 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'AndrewRadev/splitjoin.vim'
   Plug 'godlygeek/tabular', { 'for': 'markdown' }
   Plug 'plasticboy/vim-markdown'
+  Plug 'terryma/vim-multiple-cursors'
 
   " Movement / Modes
   Plug 'easymotion/vim-easymotion'
