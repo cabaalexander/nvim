@@ -54,12 +54,17 @@ let g:ale_linters = {
   \ 'jsx': ['eslint']
   \ }
 let g:ale_fixers = {
+\   '*': ['remove_trailing_lines', 'trim_whitespace'],
 \   'javascript': [
 \       'eslint'
+\   ],
+\   'sh': [
+\       'shfmt'
 \   ],
 \}
 let g:ale_completion_enabled = 1
 let g:ale_echo_msg_format = '[%linter%] %s'
+let g:ale_fix_on_save = 1
 
 " Exuberant ctags
 let g:easytags_async = 1
