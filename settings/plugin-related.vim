@@ -156,4 +156,5 @@ let g:AutoPairsMultilineClose = 0
 let g:jsdoc_enable_es6 = 1
 
 " vim-multiple-cursors
-let g:multi_cursor_start_word_key = '<C-x>'
+let g:multi_cursor_start_word_key = '<C-a>'
+let g:multi_cursor_next_key = '<C-a>'
