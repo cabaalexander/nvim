@@ -24,7 +24,7 @@ nnoremap <leader>X :qa!<CR>
 
 " Show Git's Blame :: Plugin Related
 nnoremap <leader>gb :Gblame<CR>
-noremap <leader>gB :Gbrowse<CR>
+noremap <leader>gB :Gbrowse!<CR>
 nnoremap <leader>gd :Gdiff<CR>
 nnoremap <leader>gs :GFiles?<CR>
 
@@ -75,4 +75,3 @@ nnoremap <silent> <leader>pav :AV<CR>
 for i in range(1, g:buftabline_plug_max)
     exe 'map <leader>'.i.' <Plug>BufTabLine.Go('.i.')'
 endfor
-
