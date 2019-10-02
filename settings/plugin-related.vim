@@ -4,11 +4,6 @@ scriptencoding utf-8
 " Airline / Powerline
 let g:airline_powerline_fonts = 1
 
-" NERDTree / Devicons
-let g:WebDevIconsUnicodeDecorateFolderNodes = 1
-let g:DevIconsEnableFoldersOpenClose = 1
-let g:DevIconsEnableFolderExtensionPatternMatching = 1
-
 " Indentline
 let g:indentLine_char_list = ['|', '¦', '┆', '┊']
 
