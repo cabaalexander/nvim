@@ -103,7 +103,7 @@ let g:vtr_filetype_runner_overrides = {
   \ 'sh': 'bash {file}',
   \ 'javascript.jsx': 'node {file}',
   \ 'go': 'go run {file}',
-  \ 'html': 'live-server --port=$RANDOM'
+  \ 'html': 'lvserver -ro {file}'
   \ }
 
 " neosnippet
