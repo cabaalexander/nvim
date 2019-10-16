@@ -7,6 +7,7 @@ nnoremap <silent> <localleader>es :NeoSnippetEdit<CR>
 " Shows the path of the current file
 nnoremap <localleader>p :echo expand('%:p')<CR>
 nnoremap <localleader>cp :let @+=expand('%:t')<CR>
+nnoremap <localleader>cP :let @+=expand('%')<CR>
 
 " Open last buffer
 nnoremap <localleader><localleader> <C-^>
@@ -69,4 +70,3 @@ nnoremap <silent> <localleader>sdoge :read ${HOME}/.config/nvim/snippets/doge.tx
 " Sort lines
 vnoremap <localleader>o :sort<CR>
 vnoremap <localleader>n :norm<space>
-
