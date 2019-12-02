@@ -154,3 +154,8 @@ let g:jsdoc_enable_es6 = 1
 let g:multi_cursor_start_word_key = '<C-a>'
 let g:multi_cursor_next_key = '<C-a>'
 let g:multi_cursor_quit_key = '<Esc>'
+
+" LanguageClient-neovim
+let g:LanguageClient_serverCommands = {
+    \ 'reason': [$HOME . '/.config/nvim/bin/reason-language-server'],
+    \ }

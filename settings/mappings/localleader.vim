@@ -52,6 +52,10 @@ nmap <localleader>fr <Plug>(FerretAcks)
 " fzf
 nnoremap <localleader>fw :Rg <C-r><C-w><CR>
 
+nnoremap <silent> <localleader>gd :call LanguageClient#textDocument_definition()<cr>
+nnoremap <silent> <localleader>gf :call LanguageClient#textDocument_formatting()<cr>
+
+
 " ############
 " #          #
 " # Snippets #

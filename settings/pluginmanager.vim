@@ -52,6 +52,10 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'carlitux/deoplete-ternjs', { 'do': 'yarn global add tern' }
   Plug 'Shougo/neosnippet.vim'
   Plug 'Shougo/neosnippet-snippets'
+  Plug 'autozimu/LanguageClient-neovim', {
+    \ 'branch': 'next',
+    \ 'do': 'bash install.sh',
+    \ }
 
   " UI
   Plug 'airblade/vim-gitgutter'
@@ -96,5 +100,7 @@ call plug#begin('~/.config/nvim/plugged')
 
   " Go
   Plug 'fatih/vim-go', { 'for': 'go', 'do': ':GoUpdateBinaries' }
-call plug#end()
 
+  " Reason
+  Plug 'reasonml-editor/vim-reason-plus', { 'for': 'reason' }
+call plug#end()
