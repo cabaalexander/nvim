@@ -40,14 +40,14 @@ options     head
 alias       bin binf
     #!/bin/bash -e
 
-    `expand('%:t:r')`${1:#:Suffix}() {
+    ${2:#:__}`expand('%:t:r')`${1:#:Suffix}() {
         ${0:return $?}
     }
 
-    # If this file is on the terminal $PATH's just run the function \``expand('%:t:r')`$1\`
+    # If this file is on the terminal $PATH's just run the function \`$2`expand('%:t:r')`$1\`
     # Otherwise just source it and run
     if [ "$(basename "\$0")" = "`expand('%:t')`" ]; then
-        `expand('%:t:r')`$1 "${@}"
+        $2`expand('%:t:r')`$1 "${@}"
     fi
 
 
