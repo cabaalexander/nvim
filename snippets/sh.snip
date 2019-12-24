@@ -4,7 +4,12 @@ options     head
     while getopts ":${1:#:OPTION}" opt; do
         case $opt in
             $1) ${2:opt_val="$OPTARG"} ;;
-            *) # do default stuff ;;
+            :)
+                echo "No argument provided for option (-$OPTARG)"
+                ;;
+            \?)
+                echo "Invalid option (-$OPTARG)"
+                ;;
         esac
     done
     shift $((OPTIND - 1))
@@ -73,7 +78,7 @@ options     head
 snippet     trap
 alias       trap tr
 options     head
-    trap '{ rm -rf "${0:TARGET}" ; }' SIGINT SIGTERM EXIT
+    trap "{ rm -rf ${0:TARGET} ; }" SIGINT SIGTERM EXIT
 
 
 snippet     underline-msg
