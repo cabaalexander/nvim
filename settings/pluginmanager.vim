@@ -77,6 +77,7 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'ap/vim-buftabline'
   Plug 'cabaalexander/nerdtree-doscript', { 'on':
               \ ['NERDTreeToggle', 'NERDTreeFind'] }
+  Plug 'junegunn/vim-peekaboo'
 
   " Search
   Plug 'wincent/scalpel'
