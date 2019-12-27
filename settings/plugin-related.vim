@@ -41,7 +41,7 @@ let g:ale_fixers = {
       \     'shfmt'
       \   ],
       \ }
-let g:ale_echo_msg_format = '[%linter%] %s'
+let g:ale_echo_msg_format = '[%linter%] (%code%) %s'
 let g:ale_fix_on_save = 1
 
 " Exuberant ctags

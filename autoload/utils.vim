@@ -71,7 +71,7 @@ function! utils#globToRegex(glob) abort
 endfunction
 
 function! utils#nerdtreeIgnore() abort
-    " Returns a list elements in the .gitignore_global file
+    " Returns a list elements in the ~/.config/git/ignore file
     let l:homePrefix=expand('~') . "/"
     let l:lines=readfile(l:homePrefix . ".config/git/ignore")
     let l:lines=filter(copy(l:lines), {idx, val -> strlen(val) && val !~ "^#"})
@@ -109,4 +109,3 @@ function! utils#output(...)
         put! =output
     endif
 endfunction
-
