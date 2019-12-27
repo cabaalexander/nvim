@@ -66,8 +66,6 @@ nnoremap <silent>[t gT<CR>
 xmap ga <Plug>(EasyAlign)
 nmap ga <Plug>(EasyAlign)
 
-nnoremap <silent> <cr> :call LanguageClient#textDocument_hover()<cr>
-
 " ##########
 " #        #
 " # insert #

@@ -1,3 +1,5 @@
+" vim: ts=2:sw=2
+
 " for linter warnings ¯\\_(ツ)_/¯
 scriptencoding utf-8
 
@@ -29,35 +31,16 @@ try
 catch
 endtry
 
-" Deoplete
-let g:deoplete#enable_at_startup = 1
-
-" Deoplete-tern (javascript)
-let g:deoplete#sources#ternjs#include_keywords = 1
-let g:deoplete#sources#ternjs#types = 1
-let g:deoplete#sources#ternjs#filetypes = [
-  \ 'jsx',
-  \ 'js',
-  \ ]
-
 " Ale
 let g:ale_sign_error = '●'
 let g:ale_sign_warning = '.'
 let g:ale_lint_on_enter = 1
-let g:ale_linter_aliases = {'jsx': ['css', 'javascript']}
-let g:ale_linters = {
-  \ 'jsx': ['eslint']
-  \ }
 let g:ale_fixers = {
-\   '*': ['remove_trailing_lines', 'trim_whitespace'],
-\   'javascript': [
-\       'eslint'
-\   ],
-\   'sh': [
-\       'shfmt'
-\   ],
-\}
-let g:ale_completion_enabled = 1
+      \   '*': ['remove_trailing_lines', 'trim_whitespace'],
+      \   'sh': [
+      \     'shfmt'
+      \   ],
+      \ }
 let g:ale_echo_msg_format = '[%linter%] %s'
 let g:ale_fix_on_save = 1
 
@@ -67,14 +50,14 @@ let g:easytags_async = 1
 " Tagbar
 let g:tagbar_sort = 0
 let g:tagbar_type_elm = {
-  \ 'ctagstype':'elm',
-  \ 'kinds':['h:header', 'i:import', 't:type', 'f:function', 'e:exposing'],
-  \ 'sro':'&&&',
-  \ 'kind2scope':{'h':'header', 'i':'import', 't':'type', 'f':'function'},
-  \ 'sort':0,
-  \ 'ctagsbin':$HOME . '/.config/nvim/bin/elmtags.py',
-  \ 'ctagsargs': '',
-  \ }
+      \ 'ctagstype':'elm',
+      \ 'kinds':['h:header', 'i:import', 't:type', 'f:function', 'e:exposing'],
+      \ 'sro':'&&&',
+      \ 'kind2scope':{'h':'header', 'i':'import', 't':'type', 'f':'function'},
+      \ 'sort':0,
+      \ 'ctagsbin':$HOME . '/.config/nvim/bin/elmtags.py',
+      \ 'ctagsargs': '',
+      \ }
 
 " Elm
 let g:elm_setup_keybindings = 0
@@ -100,11 +83,11 @@ let g:gutentags_cache_dir = '~/.vim/gutentags'
 
 " vim-tmux-runner
 let g:vtr_filetype_runner_overrides = {
-  \ 'sh': 'bash {file}',
-  \ 'javascript.jsx': 'node {file}',
-  \ 'go': 'go run {file}',
-  \ 'html': 'lvserver -ro {file}'
-  \ }
+      \ 'sh': 'bash {file}',
+      \ 'javascript.jsx': 'node {file}',
+      \ 'go': 'go run {file}',
+      \ 'html': 'lvserver -ro {file}'
+      \ }
 
 " neosnippet
 let g:neosnippet#snippets_directory='~/.config/nvim/snippets'
@@ -127,17 +110,17 @@ let g:FerretMap=0
 
 " projectionist
 let g:projectionist_heuristics = {
-    \   '*': {
-    \     '*index.js': {
-    \       'alternate': '{dirname}/styled.js',
-    \       'type': 'source'
-    \     },
-    \     '*styled.js': {
-    \       'alternate': '{dirname}/index.js',
-    \       'type': 'style'
-    \     }
-    \   }
-    \ }
+      \   '*': {
+      \     '*index.js': {
+      \       'alternate': '{dirname}/styled.js',
+      \       'type': 'source'
+      \     },
+      \     '*styled.js': {
+      \       'alternate': '{dirname}/index.js',
+      \       'type': 'style'
+      \     }
+      \   }
+      \ }
 
 " buftabline
 let g:buftabline_numbers = 2
@@ -155,7 +138,21 @@ let g:multi_cursor_start_word_key = '<C-a>'
 let g:multi_cursor_next_key = '<C-a>'
 let g:multi_cursor_quit_key = '<Esc>'
 
-" LanguageClient-neovim
-let g:LanguageClient_serverCommands = {
-    \ 'reason': [$HOME . '/.config/nvim/bin/reason-language-server'],
-    \ }
+" coc.nvim
+let g:coc_global_extensions = [
+      \ 'coc-css',
+      \ 'coc-eslint',
+      \ 'coc-git',
+      \ 'coc-highlight',
+      \ 'coc-html',
+      \ 'coc-json',
+      \ 'coc-marketplace',
+      \ 'coc-prettier',
+      \ 'coc-reason',
+      \ 'coc-stylelint',
+      \ 'coc-tsserver',
+      \ 'coc-yaml',
+      \ 'coc-neosnippet',
+      \ 'coc-snippets',
+      \ 'coc-rls',
+      \ ]

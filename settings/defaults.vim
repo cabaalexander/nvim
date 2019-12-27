@@ -38,4 +38,3 @@ let mapleader = "\<space>"
 
 " Change <localleader> key to backslash i.e. \
 let maplocalleader = ','
-

@@ -1,12 +1,3 @@
-function! utils#zap() abort
-    " Zap trailing whitespace
-    let l:pos=getcurpos()
-    let l:search=@/
-    keepjumps %substitute/\s\+$//e
-    nohlsearch
-    call setpos('.', l:pos)
-endfunction
-
 function! utils#obsessed() abort
     " Tries to and creates a session
     if exists(':Obsession') < 1

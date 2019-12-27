@@ -47,15 +47,10 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'osyo-manga/vim-textobj-blockwise'
 
   " Autocompletion
-  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-  Plug 'fszymanski/deoplete-emoji'
-  Plug 'carlitux/deoplete-ternjs', { 'do': 'yarn global add tern' }
+  Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
   Plug 'Shougo/neosnippet.vim'
   Plug 'Shougo/neosnippet-snippets'
-  Plug 'autozimu/LanguageClient-neovim', {
-    \ 'branch': 'next',
-    \ 'do': 'bash install.sh',
-    \ }
 
   " UI
   Plug 'airblade/vim-gitgutter'
@@ -95,9 +90,6 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'heavenshell/vim-jsdoc', { 'for': 'javascript' }
   Plug 'othree/yajs.vim', { 'do': 'yarn global add js-beautify' }
   Plug 'maxmellon/vim-jsx-pretty'
-
-  " React
-  Plug 'ivo-donchev/goto-definition-plugin-for-react', { 'for': 'javascript' }
 
   " Go
   Plug 'fatih/vim-go', { 'for': 'go', 'do': ':GoUpdateBinaries' }

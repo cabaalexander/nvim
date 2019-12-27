@@ -15,9 +15,6 @@ nnoremap <localleader><localleader> <C-^>
 " Toggle linenumbers
 nnoremap <silent> <localleader>tn :call utils#toggleNumbers()<CR>
 
-" Zap trailing whitespace in the current buffer
-nnoremap <silent> <localleader>zz :call utils#zap()<CR>
-
 " Show messages list
 nnoremap <localleader>m :messages<CR>
 
@@ -51,10 +48,6 @@ nmap <localleader>fr <Plug>(FerretAcks)
 
 " fzf
 nnoremap <localleader>fw :Rg <C-r><C-w><CR>
-
-nnoremap <silent> <localleader>gd :call LanguageClient#textDocument_definition()<cr>
-nnoremap <silent> <localleader>gf :call LanguageClient#textDocument_formatting()<cr>
-
 
 " ############
 " #          #
