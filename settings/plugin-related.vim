@@ -86,7 +86,8 @@ let g:vtr_filetype_runner_overrides = {
       \ 'sh': 'bash {file}',
       \ 'javascript.jsx': 'node {file}',
       \ 'go': 'go run {file}',
-      \ 'html': 'lvserver -ro {file}'
+      \ 'html': 'lvserver -ro {file}',
+      \ 'rust': 'cargo run'
       \ }
 
 " neosnippet
