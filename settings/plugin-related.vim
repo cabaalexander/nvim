@@ -113,10 +113,10 @@ let g:FerretMap=0
 let g:projectionist_heuristics = {
       \   '*': {
       \     '*index.js': {
-      \       'alternate': '{dirname}/styled.js',
+      \       'alternate': '{dirname}/styles.js',
       \       'type': 'source'
       \     },
-      \     '*styled.js': {
+      \     '*styles.js': {
       \       'alternate': '{dirname}/index.js',
       \       'type': 'style'
       \     }

@@ -44,6 +44,7 @@ snippet     bin-function
 options     head
 alias       bin binf
     #!/bin/bash -e
+    # shellcheck disable=2064
 
     ${2:#:__}`expand('%:t:r')`${1:#:Suffix}() {
         ${0:return $?}
@@ -103,3 +104,15 @@ options     head
     #!/bin/bash
     set -Eeuo pipefail
     ${0:TARGET}
+
+snippet     match-regexp
+abbr        regex
+options     head
+    if [[ $${1:string} =~ ${2:^regexp.*} ]]; then
+        ${0}
+    fi
+
+snippet     absolute-path
+alias       abs
+options     head
+    ${1:file_path_abs}=$(cd "$FILE_PATH" || exit; pwd)${0}
