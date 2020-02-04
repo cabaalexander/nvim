@@ -157,3 +157,6 @@ let g:coc_global_extensions = [
       \ 'coc-snippets',
       \ 'coc-rls',
       \ ]
+
+" vim-table-mode
+let g:table_mode_corner='|'
