@@ -31,5 +31,14 @@ options     word
 snippet     styled-class
 alias       csx
 options     head
-  export const ${1:foo}Class = css\`
+    export const ${1:foo} = css\`
+    \`;
+
+snippet     emotion-init
+alias       emo
+options     head
+  import {css} from 'emotion';
+
+  export const ${1:foo} = css\`
+    ${0:TARGET}
   \`;
