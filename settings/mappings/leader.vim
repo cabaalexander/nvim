@@ -71,6 +71,11 @@ nnoremap <silent> <leader>paa :A<CR>
 nnoremap <silent> <leader>pas :AS<CR>
 nnoremap <silent> <leader>pav :AV<CR>
 
+" vim-windowswap
+nnoremap <silent> <leader>yw :call WindowSwap#MarkWindowSwap()<CR>
+nnoremap <silent> <leader>pw :call WindowSwap#DoWindowSwap()<CR>
+nnoremap <silent> <leader>ww :call WindowSwap#EasyWindowSwap()<CR>
+
 " buftabline
 for i in range(1, g:buftabline_plug_max)
     exe 'map <leader>'.i.' <Plug>BufTabLine.Go('.i.')'

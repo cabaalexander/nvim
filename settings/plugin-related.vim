@@ -158,5 +158,8 @@ let g:coc_global_extensions = [
       \ 'coc-rls',
       \ ]
 
+" vim-windowswap
+let g:windowswap_map_keys = 0
+
 " vim-table-mode
 let g:table_mode_corner='|'
