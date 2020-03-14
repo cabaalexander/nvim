@@ -2,18 +2,10 @@ snippet     react-func-stateless
 alias       rles reless
 options     head
     import React from 'react';
-    import PropTypes from 'prop-types';
-    import * as styles from './styles';
 
-    const ${1:functionName} = (${2:\{\}}) => {
-      return (
-        ${0}
-      );
-    };
-
-    $1.defaultProps = $2;
-
-    $1.propTypes = $2;
+    const ${1:functionName} = () => (
+      ${0:TARGET}
+    );
 
     export default $1;
 
@@ -21,7 +13,7 @@ options     head
 snippet     anonymous-func
 alias       ano anfun
 options     word
-    ${1:#:props} => ${0:TARGET}
+    (${1:#:props}) => ${0:TARGET}
 
 snippet     clog
 options     word

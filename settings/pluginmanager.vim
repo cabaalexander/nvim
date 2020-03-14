@@ -31,6 +31,7 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'plasticboy/vim-markdown'
   Plug 'dhruvasagar/vim-table-mode', { 'for': 'markdown' }
   Plug 'terryma/vim-multiple-cursors'
+  Plug 'mtdl9/vim-log-highlighting'
 
   " Movement / Modes
   Plug 'easymotion/vim-easymotion'
