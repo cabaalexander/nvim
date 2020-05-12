@@ -13,7 +13,7 @@ options     head
 snippet     anonymous-func
 alias       ano anfun
 options     word
-    (${1:#:props}) => ${0:TARGET}
+    (${1:#:props}) => {${0:TARGET}}
 
 snippet     clog
 options     word
@@ -27,7 +27,7 @@ options     head
     \`;
 
 snippet     emotion-init
-alias       emo
+alias       csx-init
 options     head
   import {css} from 'emotion';
 

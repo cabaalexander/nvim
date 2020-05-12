@@ -1,3 +1,7 @@
+" for the modeline to work ¯\\_(ツ)_/¯
+set modeline
+set modelines=2
+
 " for linter warnings ¯\\_(ツ)_/¯
 scriptencoding utf-8
 
