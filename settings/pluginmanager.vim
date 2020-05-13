@@ -72,6 +72,7 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'ap/vim-buftabline'
   Plug 'cabaalexander/nerdtree-doscript', { 'on':
               \ ['NERDTreeToggle', 'NERDTreeFind'] }
+  Plug 'norcalli/nvim-colorizer.lua'
 
   " Search
   Plug 'wincent/scalpel'

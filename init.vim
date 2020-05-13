@@ -20,6 +20,9 @@ so ~/.config/nvim/settings/plugin-related.vim
 so ~/.config/nvim/settings/statusline.vim
 so ~/.config/nvim/settings/usercommands.vim
 
+" lua
+luafile ~/.config/nvim/lua/plug-colorizer.lua
+
 " Mappings
 so ~/.config/nvim/settings/mappings/leader.vim
 so ~/.config/nvim/settings/mappings/localleader.vim
