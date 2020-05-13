@@ -10,9 +10,10 @@ augroup vimrcEx
     \   execute "normal! g`\"" |
     \ endif
 
-  " " On Enter
+  " On Enter
   au VimEnter * :call VimEnterAU()
   function! VimEnterAU() abort
+      " start obsessed (keep session)
       :call utils#obsessed()
   endfunction
 
@@ -20,6 +21,13 @@ augroup vimrcEx
   au FileType notes :call NotesAU()
   function! NotesAU() abort
       let b:indentLine_enabled = 0
+  endfunction
+
+  " json
+  au FileType json :call JsonAU()
+  function! JsonAU() abort
+    set sw=2
+    set ts=2
   endfunction
 
   " NERDTree

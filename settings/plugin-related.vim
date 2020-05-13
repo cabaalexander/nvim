@@ -139,7 +139,7 @@ let g:multi_cursor_start_word_key = ',cc'
 let g:multi_cursor_next_key = ',cc'
 let g:multi_cursor_quit_key = '<Esc>'
 
-" coc.nvim
+" {{{ coc.nvim
 let g:coc_global_extensions = [
       \ 'coc-css',
       \ 'coc-eslint',
@@ -156,7 +156,36 @@ let g:coc_global_extensions = [
       \ 'coc-neosnippet',
       \ 'coc-snippets',
       \ 'coc-rls',
+      \ 'coc-explorer',
       \ ]
+
+let g:coc_explorer_global_presets = {
+      \   '.vim': {
+      \      'root-uri': '~/.vim',
+      \   },
+      \   'floating': {
+      \      'position': 'floating',
+      \   },
+      \   'floatingLeftside': {
+      \      'position': 'floating',
+      \      'floating-position': 'left-center',
+      \      'floating-width': 50,
+      \   },
+      \   'floatingRightside': {
+      \      'position': 'floating',
+      \      'floating-position': 'left-center',
+      \      'floating-width': 50,
+      \   },
+      \   'simplify': {
+      \     'file.child.template': '[selection | clip | 1] [indent][icon | 1] [filename omitCenter 1]'
+      \   }
+      \ }
+
+" coc-explorer
+nnoremap <silent><leader>j :CocCommand explorer<CR>
+nnoremap <silent><leader>k :CocCommand explorer --preset floating<CR>
+autocmd BufEnter * if (winnr("$") == 1 && &filetype == 'coc-explorer') | q | endif
+" }}}
 
 " vim-windowswap
 let g:windowswap_map_keys = 0
