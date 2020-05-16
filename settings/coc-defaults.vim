@@ -1,4 +1,5 @@
 " defaults {{{
+
 " if hidden is not set, TextEdit might fail.
 set hidden
 
@@ -13,9 +14,11 @@ set signcolumn=yes
 
 " Add status line support, for integration with other plugin, checkout `:h coc-status`
 set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
+
 " }}}
 
 " mappings {{{
+
 " Use <c-space> to trigger completion.
 inoremap <silent><expr> <c-space> coc#refresh()
 
@@ -84,9 +87,11 @@ function! s:show_documentation()
     call CocAction('doHover')
   endif
 endfunction
+
 " }}}
 
 " AUcmd {{{
+
 " Highlight symbol under cursor on CursorHold
 autocmd CursorHold * silent call CocActionAsync('highlight')
 
@@ -97,9 +102,11 @@ augroup mygroup
   " Update signature help on jump placeholder
   autocmd User CocJumpPlaceholder call CocActionAsync('showSignatureHelp')
 augroup end
+
 " }}}
 
 " commands {{{
+
 " Use `:Format` to format current buffer
 command! -nargs=0 Format :call CocAction('format')
 
@@ -108,4 +115,5 @@ command! -nargs=? Fold :call     CocAction('fold', <f-args>)
 
 " use `:OR` for organize import of current buffer
 command! -nargs=0 OR   :call     CocAction('runCommand', 'editor.action.organizeImport')
+"
 " }}}

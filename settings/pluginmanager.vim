@@ -87,7 +87,7 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'jparise/vim-graphql'
 
   " JavaScript
-  Plug 'heavenshell/vim-jsdoc', { 'for': 'javascript' }
+  Plug 'heavenshell/vim-jsdoc', { 'for': 'javascript', 'tag': '1.0.0' }
   Plug 'othree/yajs.vim', { 'do': 'yarn global add js-beautify' }
   Plug 'maxmellon/vim-jsx-pretty'
 
