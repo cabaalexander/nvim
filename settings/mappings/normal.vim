@@ -1,3 +1,10 @@
+" undo friendly
+nnoremap <C-r> <NOP>
+nnoremap U <C-r>
+
+" format paragraph
+nnoremap =zz =ip
+
 " Copy to clipboard
 nnoremap <C-c> "+y
 

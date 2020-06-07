@@ -1,3 +1,6 @@
+" replace in buffer
+nnoremap <leader>R :%s/
+
 " Force edit current buffer
 nnoremap <silent> <leader>E :e!<CR>
 

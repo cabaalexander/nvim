@@ -140,6 +140,7 @@ let g:multi_cursor_next_key = ',cc'
 let g:multi_cursor_quit_key = '<Esc>'
 
 " {{{ coc.nvim
+
 let g:coc_global_extensions = [
       \ 'coc-css',
       \ 'coc-eslint',
@@ -185,6 +186,9 @@ let g:coc_explorer_global_presets = {
 nnoremap <silent><leader>j :CocCommand explorer<CR>
 nnoremap <silent><leader>k :CocCommand explorer --preset floating<CR>
 autocmd BufEnter * if (winnr("$") == 1 && &filetype == 'coc-explorer') | q | endif
+
+command! -nargs=0 Prettier :CocCommand prettier.formatFile
+
 " }}}
 
 " vim-windowswap

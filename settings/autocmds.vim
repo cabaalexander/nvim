@@ -10,6 +10,9 @@ augroup vimrcEx
     \   execute "normal! g`\"" |
     \ endif
 
+  " man pages
+  au FileType man set conceallevel=0
+
   " On Enter
   au VimEnter * :call VimEnterAU()
   function! VimEnterAU() abort
@@ -30,9 +33,9 @@ augroup vimrcEx
     set ts=2
   endfunction
 
-  " NERDTree
-  au FileType nerdtree :call NERDTreeAU()
-  function! NERDTreeAU() abort
+  " relative number for: NERDTree,
+  au FileType nerdtree,coc-explorer :call RelativeNumberAU()
+  function! RelativeNumberAU() abort
       setlocal number
       setlocal relativenumber
   endfunction
