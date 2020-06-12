@@ -3,12 +3,6 @@
 " Formats JSON
 command! FormatJSON %!python -m json.tool
 
-" #######
-" #     #
-" # fzf #
-" #     #
-" #######
-
 " Find using `rg`
 command! -bang -nargs=* Rg
   \ call fzf#vim#grep(
@@ -29,8 +23,7 @@ command! -bang -nargs=? -complete=dir Files
   \ call fzf#vim#files(<q-args>, fzf#vim#with_preview(), <bang>0)
 
 " Puts the output of a command to a new window
-command! -nargs=+ -complete=command Output call utils#output(<f-args>)
+command! -nargs=+ -complete=command VCommand call utils#output(<f-args>)
 
 " Put bash command into a new window
-command! -nargs=* -complete=shellcmd R new | setlocal buftype=nofile bufhidden=hide noswapfile | r !<args>
-
+command! -nargs=* -complete=shellcmd Shell new | setlocal buftype=nofile bufhidden=hide noswapfile | r !<args>
