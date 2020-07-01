@@ -13,13 +13,6 @@ augroup vimrcEx
   " man pages
   au FileType man set conceallevel=0
 
-  " On Enter
-  au VimEnter * :call VimEnterAU()
-  function! VimEnterAU() abort
-      " start obsessed (keep session)
-      :call utils#obsessed()
-  endfunction
-
   " notes
   au FileType notes :call NotesAU()
   function! NotesAU() abort

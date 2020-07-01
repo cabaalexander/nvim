@@ -196,3 +196,6 @@ let g:windowswap_map_keys = 0
 
 " vim-table-mode
 let g:table_mode_corner='|'
+
+" vim-workspace
+let g:workspace_persist_undo_history = 0
