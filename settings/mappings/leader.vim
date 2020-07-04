@@ -38,8 +38,8 @@ nnoremap <leader>pc :PlugClean<CR>
 nnoremap <leader>pu :PlugUpdate<CR>
 nnoremap <leader>pU :PlugUpgrade<CR>
 
-" Calls `vim-workspace` plugin
-nnoremap <silent><leader>o :ToggleWorkspace<CR>
+" Calls `Obsession` plugin
+nnoremap <leader>o :Obsession<CR>
 
 " fzf
 nnoremap <leader>f :Files<CR>

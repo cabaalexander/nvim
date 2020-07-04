@@ -12,7 +12,7 @@ call plug#begin('~/.config/nvim/plugged')
   " Editor
   Plug 'joom/vim-commentary'
   Plug 'mattn/emmet-vim'
-  Plug 'thaerkh/vim-workspace'
+  Plug 'tpope/vim-obsession'
   Plug 'w0rp/ale'
   Plug 'xolox/vim-notes', { 'do': 'mkdir ~/.notes'}
   Plug 'editorconfig/editorconfig-vim'

@@ -1,3 +1,29 @@
+function! utils#obsessed() abort
+    " Tries to and creates a session
+    if exists(':Obsession') < 1
+        echoerr 'Obsession plugin not installed'
+        return 1
+    endif
+
+    let l:pathFirstPart = split(getcwd(), '/')[0]
+
+    if l:pathFirstPart !=# 'home'
+        return 1
+    endif
+
+    let l:file = 'Session.vim'
+    let l:status = ObsessionStatus()
+    let l:sessionExists = filereadable(l:file)
+
+    if !l:sessionExists || l:status ==# '[S]'
+        execute('Obsession')
+    elseif l:status ==# '[$]'
+        echom 'Session restored'
+    elseif l:sessionExists && strlen(l:status) == 0
+        echom 'You have a session file, to restore it run: nvim -S'
+    endif
+endfunction
+
 function! utils#toggleNumbers() abort
     " Hides or shows line numbers
     set nu!
