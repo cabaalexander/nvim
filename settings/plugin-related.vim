@@ -149,7 +149,7 @@ let g:coc_global_extensions = [
       \ 'coc-html',
       \ 'coc-json',
       \ 'coc-marketplace',
-      \ 'coc-prettier',
+      \ 'coc-python',
       \ 'coc-reason',
       \ 'coc-stylelint',
       \ 'coc-tsserver',
