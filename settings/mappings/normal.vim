@@ -72,11 +72,3 @@ nnoremap <silent>[t gT<CR>
 " easy-align
 xmap ga <Plug>(EasyAlign)
 nmap ga <Plug>(EasyAlign)
-
-" ##########
-" #        #
-" # insert #
-" #        #
-" ##########
-imap <c-x><c-f> <plug>(fzf-complete-path)
-imap <c-x><c-l> <plug>(fzf-complete-line)
