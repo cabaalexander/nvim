@@ -17,13 +17,45 @@ augroup vimrcEx
   au VimEnter * :call VimEnterAU()
   function! VimEnterAU() abort
       " start obsessed (keep session)
-      :call utils#obsessed()
+      call utils#obsessed()
+
+      " enable `doing-today` mapping
+      function! s:todayNote() abort
+          call <SID>updateRepo()
+          exec 'Note ' . 'doing.today - ' . strftime('%d.%m.%y')
+      endfunction
+      nnoremap <silent><localleader>n :call <SID>todayNote()<CR>
   endfunction
+
+  " {{{ notes:util-functions
+  function! s:runShell(cmd) abort
+      let l:command = system('cd ~/.notes && ' . a:cmd)
+      return l:command
+  endfunction
+
+  function! s:updateRepo() abort
+      echo
+      let l:currentBranch=<SID>runShell('git symbolic-ref --short -q HEAD')
+      call <SID>runShell('git fetch origin '.l:currentBranch.' &> /dev/null')
+      call <SID>runShell('git reset --hard origin/'.l:currentBranch)
+      echom 'Notes repo updated'
+  endfunction
+
+  function! s:saveRepo() abort
+      echo
+      silent write
+      call <SID>runShell('git add .')
+      call <SID>runShell('git commit --amend --no-edit')
+      call <SID>runShell('git push origin master -f')
+      echom 'Note saved (and repo too)'
+  endfunction
+
+  " }}}
 
   " notes
   au FileType notes :call NotesAU()
   function! NotesAU() abort
-      let b:indentLine_enabled = 0
+      nnoremap <buffer><silent><leader>s :call <SID>saveRepo()<CR>
   endfunction
 
   " json

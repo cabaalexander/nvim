@@ -13,7 +13,7 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'mattn/emmet-vim'
   Plug 'tpope/vim-obsession'
   Plug 'w0rp/ale'
-  Plug 'xolox/vim-notes', { 'do': 'mkdir ~/.notes'}
+  Plug 'xolox/vim-notes', { 'do': 'mkdir -p ~/.notes'}
   Plug 'editorconfig/editorconfig-vim'
   Plug 'ludovicchabant/vim-gutentags'
   Plug 'cabaalexander/vim-tmux-runner', { 'on':

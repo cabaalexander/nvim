@@ -24,7 +24,9 @@ nnoremap <localleader>T :terminal<CR>a
 " Sets the working directory to current buffer
 nnoremap <silent> <localleader>lcd :call utils#toggleLCD()<CR>
 
+" vim-notes
 nnoremap <localleader>tN :ShowTaggedNotes<CR>
+nnoremap <localleader>n :ShowTaggedNotes<CR>
 
 nnoremap <silent> <localleader>c :call utils#toggleConceal()<CR>
 
