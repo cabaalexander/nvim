@@ -27,3 +27,6 @@ command! -nargs=+ -complete=command VCommand call utils#output(<f-args>)
 
 " Put bash command into a new window
 command! -nargs=* -complete=shellcmd Shell new | setlocal buftype=nofile bufhidden=hide noswapfile | r !<args>
+
+" Put today's date into the buffer
+command! Today :-1pu=strftime('%b-%d-%Y')
