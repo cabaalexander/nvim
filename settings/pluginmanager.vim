@@ -9,7 +9,7 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'xolox/vim-misc' " vim notes
 
   " Editor
-  Plug 'joom/vim-commentary'
+  Plug 'tomtom/tcomment_vim'
   Plug 'mattn/emmet-vim'
   Plug 'tpope/vim-obsession'
   Plug 'w0rp/ale'
