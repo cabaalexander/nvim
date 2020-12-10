@@ -30,3 +30,5 @@ command! -nargs=* -complete=shellcmd Shell new | setlocal buftype=nofile bufhidd
 
 " Put today's date into the buffer
 command! Today :-1pu=strftime('%b-%d-%Y')
+
+command! -nargs=+ SetTabWidth call utils#setTabSpace(<args>)

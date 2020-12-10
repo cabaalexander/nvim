@@ -51,6 +51,9 @@ nmap <localleader>fr <Plug>(FerretAcks)
 " fzf
 nnoremap <localleader>fw :Rg <C-r><C-w><CR>
 
+" set tab width
+nnoremap <localleader>tw :SetTabWidth<space>
+
 " ############
 " #          #
 " # Snippets #

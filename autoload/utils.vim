@@ -109,3 +109,8 @@ function! utils#output(...)
         put! =output
     endif
 endfunction
+
+function! utils#setTabSpace(spaceNumber) abort
+    execute('set tabstop=' . a:spaceNumber)
+    execute('set shiftwidth=' . a:spaceNumber)
+endfunction
