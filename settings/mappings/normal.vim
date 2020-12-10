@@ -24,10 +24,6 @@ nmap Q gq
 nnoremap 0 ddp
 nnoremap ) ddkP
 
-" Easy motion
-nmap <silent> <leader><leader>w <Plug>(easymotion-bd-w)
-nmap <silent> <leader><leader>e <Plug>(easymotion-bd-e)
-
 " Block some default keys
 nnoremap <space> <NOP>
 nnoremap <backspace> <NOP>
