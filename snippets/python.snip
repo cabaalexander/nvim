@@ -1,0 +1,12 @@
+snippet     pretty-printer
+alias       pprinter ppter
+options     head
+    ###### pretty printer
+    import pprint
+    pp = pprint.PrettyPrinter(indent=4)
+    pprint = pp.pprint
+    ###### pretty printer
+    def debug(log):
+        print('---------------------------------------------')
+        pprint(log)
+        print('---------------------------------------------')

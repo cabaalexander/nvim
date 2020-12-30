@@ -19,17 +19,12 @@ options     head
 snippet     getopts-long
 options     head
 alias       opl optsl optl
-    for $ARG in "$@"; do
+    for ARG in "$@"; do
     case "$ARG" in
         --${1:extension}=*)
         ${2:EXTENSION}="${ARG#*=}"
-        shift # past this arg
+        shift
         ;;
-        --${3:default})
-        ${4:DEFAULT}=YES
-        shift # past this arg
-        ;;
-        *) # unknown option ;;
     esac
     done
     ${0}
