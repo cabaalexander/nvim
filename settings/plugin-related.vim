@@ -150,7 +150,6 @@ let g:coc_global_extensions = [
       \ 'coc-json',
       \ 'coc-marketplace',
       \ 'coc-python',
-      \ 'coc-reason',
       \ 'coc-stylelint',
       \ 'coc-tsserver',
       \ 'coc-yaml',

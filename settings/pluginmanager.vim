@@ -93,7 +93,4 @@ call plug#begin('~/.config/nvim/plugged')
   " Go
   " Plug 'fatih/vim-go', { 'for': 'go', 'do': ':GoUpdateBinaries' }
   " uncomment this when you begin to work with go ¯\_(ツ)_/¯
-
-  " Reason
-  Plug 'reasonml-editor/vim-reason-plus', { 'for': 'reason' }
 call plug#end()
