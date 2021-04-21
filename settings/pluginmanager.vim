@@ -60,7 +60,7 @@ call plug#begin('~/.config/nvim/plugged')
               \ ['NERDTreeToggle', 'NERDTreeFind'] }
   Plug 'tpope/vim-fugitive'
   Plug 'tpope/vim-rhubarb'
-  Plug 'majutsushi/tagbar', { 'on': 'TagbarToggle' }
+  Plug 'preservim/tagbar', { 'on': 'TagbarToggle' }
   Plug 'wesq3/vim-windowswap'
   Plug 'ryanoasis/vim-devicons'
   Plug 'google/vim-searchindex'
