@@ -55,7 +55,6 @@ nnoremap <leader>; :History:<CR>
 nnoremap <leader>: :Commands<CR>
 nnoremap <leader>m :Map<CR>
 nnoremap <leader>M :Marks<CR>
-nnoremap <leader>h :Helptags<CR>
 
 " vim-tmux-runner
 nnoremap <silent> <leader>r :VtrSendFile!<CR>

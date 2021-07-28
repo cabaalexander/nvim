@@ -93,6 +93,9 @@ let g:vtr_filetype_runner_overrides = {
 " neosnippet
 let g:neosnippet#snippets_directory='~/.config/nvim/snippets'
 let g:neosnippet#enable_completed_snippet = 1
+" enable the same javascript snippet for react
+let g:neosnippet#scope_aliases = {}
+let g:neosnippet#scope_aliases['javascriptreact'] = 'javascript'
 
 " vim-mergetool
 let g:mergetool_layout = 'm,r'
@@ -139,8 +142,7 @@ let g:multi_cursor_start_word_key = ',cc'
 let g:multi_cursor_next_key = ',cc'
 let g:multi_cursor_quit_key = '<Esc>'
 
-" {{{ coc.nvim
-
+" coc
 let g:coc_global_extensions = [
       \ 'coc-css',
       \ 'coc-eslint',
@@ -159,12 +161,12 @@ let g:coc_global_extensions = [
       \ 'coc-explorer',
       \ ]
 
+" coc-explorer
+autocmd BufEnter * if (winnr("$") == 1 && &filetype == 'coc-explorer') | q | endif
 let g:coc_explorer_global_presets = {
-      \   '.vim': {
-      \      'root-uri': '~/.vim',
-      \   },
       \   'floating': {
       \      'position': 'floating',
+      \      'root-strategies': 'keep',
       \   },
       \   'floatingLeftside': {
       \      'position': 'floating',
@@ -173,22 +175,10 @@ let g:coc_explorer_global_presets = {
       \   },
       \   'floatingRightside': {
       \      'position': 'floating',
-      \      'floating-position': 'left-center',
+      \      'floating-position': 'right-center',
       \      'floating-width': 50,
-      \   },
-      \   'simplify': {
-      \     'file.child.template': '[selection | clip | 1] [indent][icon | 1] [filename omitCenter 1]'
       \   }
       \ }
-
-" coc-explorer
-nnoremap <silent><leader>j :CocCommand explorer<CR>
-nnoremap <silent><leader>k :CocCommand explorer --preset floating<CR>
-autocmd BufEnter * if (winnr("$") == 1 && &filetype == 'coc-explorer') | q | endif
-
-command! -nargs=0 Prettier :CocCommand prettier.formatFile
-
-" }}}
 
 " vim-windowswap
 let g:windowswap_map_keys = 0

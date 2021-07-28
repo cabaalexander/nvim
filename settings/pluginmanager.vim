@@ -31,6 +31,7 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'terryma/vim-multiple-cursors'
   Plug 'mtdl9/vim-log-highlighting'
   Plug 'pprovost/vim-ps1'
+  Plug 'brtastic/vim-jsonviewer'
 
   " Movement / Modes
   Plug 'easymotion/vim-easymotion'

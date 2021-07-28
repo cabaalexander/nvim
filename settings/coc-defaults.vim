@@ -19,6 +19,11 @@ set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 
 " mappings {{{
 
+" coc-explorer
+nnoremap <silent><leader>j :CocCommand explorer --preset floatingLeftside<CR>
+nnoremap <silent><leader>J :CocCommand explorer --preset floatingRightside<CR>
+nnoremap <silent><leader>k :CocCommand explorer --preset floating<CR>
+
 " Use <c-space> to trigger completion.
 inoremap <silent><expr> <c-space> coc#refresh()
 
@@ -90,7 +95,7 @@ endfunction
 
 " }}}
 
-" AUcmd {{{
+" autocmd {{{
 
 " Highlight symbol under cursor on CursorHold
 autocmd CursorHold * silent call CocActionAsync('highlight')

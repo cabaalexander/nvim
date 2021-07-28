@@ -3,6 +3,13 @@
 " Formats JSON
 command! FormatJSON %!python -m json.tool
 
+" View JSON
+command! ViewJSON
+  \ :set ft=json
+  \ | :call jsonviewer#init()
+  \ | :bp!
+  \ | :bd!
+
 " Find using `rg`
 command! -bang -nargs=* Rg
   \ call fzf#vim#grep(
@@ -31,4 +38,8 @@ command! -nargs=* -complete=shellcmd Shell new | setlocal buftype=nofile bufhidd
 " Put today's date into the buffer
 command! Today :-1pu=strftime('%b-%d-%Y')
 
+" set width to tabs and spaces
 command! -nargs=+ SetTabWidth call utils#setTabSpace(<args>)
+
+" pretty things with coc
+command! -nargs=0 Prettier :CocCommand prettier.formatFile

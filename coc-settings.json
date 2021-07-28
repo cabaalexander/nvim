@@ -3,10 +3,7 @@
   "explorer.icon.enableNerdfont": true,
   "explorer.previewAction.onHover": false,
   "explorer.quitOnOpen": false,
-  "explorer.keyMappings": {
-    "<cr>": ["expandable?", "expand", "open"],
-    "v": "open:vsplit"
-  },
+  "explorer.file.reveal.whenOpen": false,
 
   "python.jediEnabled": false
 }
