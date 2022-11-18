@@ -49,7 +49,6 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'osyo-manga/vim-textobj-blockwise'
 
   " Autocompletion
-  Plug 'neoclide/coc.nvim', {'branch': 'release'}
   Plug 'Shougo/neosnippet.vim'
   Plug 'Shougo/neosnippet-snippets'
 

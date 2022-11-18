@@ -65,13 +65,6 @@ augroup vimrcEx
     set ts=2
   endfunction
 
-  " relative number for: NERDTree,
-  au FileType nerdtree,coc-explorer :call RelativeNumberAU()
-  function! RelativeNumberAU() abort
-      setlocal number
-      setlocal relativenumber
-  endfunction
-
   " Elm file types
   au FileType elm :call ElmAU()
   function! ElmAU() abort

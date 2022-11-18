@@ -142,44 +142,6 @@ let g:multi_cursor_start_word_key = ',cc'
 let g:multi_cursor_next_key = ',cc'
 let g:multi_cursor_quit_key = '<Esc>'
 
-" coc
-let g:coc_global_extensions = [
-      \ 'coc-css',
-      \ 'coc-eslint',
-      \ 'coc-git',
-      \ 'coc-highlight',
-      \ 'coc-html',
-      \ 'coc-json',
-      \ 'coc-marketplace',
-      \ 'coc-python',
-      \ 'coc-stylelint',
-      \ 'coc-tsserver',
-      \ 'coc-yaml',
-      \ 'coc-neosnippet',
-      \ 'coc-snippets',
-      \ 'coc-rls',
-      \ 'coc-explorer',
-      \ ]
-
-" coc-explorer
-autocmd BufEnter * if (winnr("$") == 1 && &filetype == 'coc-explorer') | q | endif
-let g:coc_explorer_global_presets = {
-      \   'floating': {
-      \      'position': 'floating',
-      \      'root-strategies': 'keep',
-      \   },
-      \   'floatingLeftside': {
-      \      'position': 'floating',
-      \      'floating-position': 'left-center',
-      \      'floating-width': 50,
-      \   },
-      \   'floatingRightside': {
-      \      'position': 'floating',
-      \      'floating-position': 'right-center',
-      \      'floating-width': 50,
-      \   }
-      \ }
-
 " vim-windowswap
 let g:windowswap_map_keys = 0
 

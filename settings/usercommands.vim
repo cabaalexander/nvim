@@ -40,6 +40,3 @@ command! Today :-1pu=strftime('%b-%d-%Y')
 
 " set width to tabs and spaces
 command! -nargs=+ SetTabWidth call utils#setTabSpace(<args>)
-
-" pretty things with coc
-command! -nargs=0 Prettier :CocCommand prettier.formatFile

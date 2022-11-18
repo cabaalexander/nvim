@@ -3,12 +3,13 @@ alias       rles reless
 options     head
     import React from 'react';
 
-    const ${1:functionName} = () => (
-      ${0:TARGET}
-    );
-
-    export default $1;
-
+    export default function ${1:functionName}() {
+      return (
+        <div>
+            ${0:TARGET}
+        </div>
+      )
+    };
 
 snippet     anonymous-func
 alias       ano anfun
