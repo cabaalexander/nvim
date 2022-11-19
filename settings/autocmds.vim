@@ -18,6 +18,7 @@ augroup vimrcEx
   function! VimEnterAU() abort
       " start obsessed (keep session)
       call utils#obsessed()
+      set conceallevel=0
 
       " enable `doing-today` mapping
       function! s:todayNote() abort

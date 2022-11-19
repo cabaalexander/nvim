@@ -83,10 +83,10 @@ endfunction
 function! utils#toggleConceal() abort
     " Show or hide toggleConceal
     if !get(b:, 'toggleConcealBool')
-        set conceallevel=0
+        set conceallevel=1
         let b:toggleConcealBool=1 " toggle true
     else
-        set conceallevel=1
+        set conceallevel=0
         let b:toggleConcealBool=0 " toggle false
     endif
 endfunction
