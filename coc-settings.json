@@ -1,9 +1,0 @@
-{
-  "explorer.width": 30,
-  "explorer.icon.enableNerdfont": true,
-  "explorer.previewAction.onHover": false,
-  "explorer.quitOnOpen": false,
-  "explorer.file.reveal.whenOpen": false,
-
-  "python.jediEnabled": false
-}
